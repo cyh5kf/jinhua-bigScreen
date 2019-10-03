@@ -1,0 +1,205 @@
+.centerTop {
+    width: 100%;
+    height: 2.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .icon_yun {
+        width: 3.89rem;
+        height: 2.758rem;
+        background: url(../../../../../assets/images/cloud.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .block {
+        position: absolute;
+        text-align: center;
+
+        p {
+            font-weight:500;
+            color:rgba(184,200,241,0.8);
+            margin-bottom: 0.05rem;
+            font-size: 0.116rem;
+        }
+
+        .icon_block {
+            width: 0.89rem;
+            height: 0.366rem;
+            background: url(../../../../../assets/images/图标块.svg) no-repeat;
+            background-size: 100%;
+            transition: all 0.1s;
+        }
+    }
+
+    .block1 {
+        top: 0.55rem;
+        left: 1rem;
+    }
+
+    .block2 {
+        top: 1.75rem;
+        left: 1.2rem;
+    }
+
+    .block3 {
+        top: 2.25rem;
+        left: 2.75rem;
+    }
+
+    .block4 {
+        top: 2.25rem;
+        right: 2.75rem;
+    }
+
+    .block5 {
+        top: 1.75rem;
+        right: 1.2rem;
+    }
+
+    .block6 {
+        top: 0.55rem;
+        right: 1rem;
+    }
+
+    .active {
+        p {
+            font-size: 0.1916rem;
+            color:rgba(184,200,241,1);
+        }
+
+        .icon_block {
+            width: 1.45rem;
+            height: 0.6rem;
+            background: url(../../../../../assets/images/图标块.svg) no-repeat;
+            background-size: 100%;
+        }
+    }
+
+    .active.block1 {
+        top: 0.55rem;
+        left: 0.85rem;
+    }
+
+    .active.block2 {
+        top: 1.55rem;
+        left: 0.95rem;
+    }
+
+    .active.block3 {
+        top: 2.15rem;
+        left: 2.45rem;
+    }
+
+    .active.block4 {
+        top: 2.15rem;
+        right: 2.55rem;
+    }
+
+    .active.block5 {
+        top: 1.55rem;
+        right: 0.9rem;
+    }
+
+    .active.block6 {
+        top: 0.55rem;
+        right: 0.85rem;
+    }
+
+}
+
+:global {
+    .line {
+        display: block;
+        position: absolute;
+      }
+      
+      .ball {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background-color: #3897f9;
+        border-radius: 50%;
+        offset-distance: 0%;
+        animation: blue-ball 2s linear normal infinite;
+    }
+    
+    .line1 {
+        width: 1.2rem;
+        height: 0.4rem;
+        top: 0.8rem;
+        left: 2.01rem;
+    }
+    
+    .ball1 {
+        top: 0.8rem;
+        left: 2.01rem;
+        offset-path: path('M140 20 Q 95 10 10 30');
+    }
+
+    .line2 {
+        width: 1.2rem;
+        height: 0.7rem;
+        top: 1.4rem;
+        left: 1.91rem;
+    }
+    
+    .ball2 {
+        top: 1.4rem;
+        left: 1.91rem;
+        offset-path: path('M130 10 Q 95 20 10 90');
+    }
+
+    .line3 {
+        width: 0.5rem;
+        height: 0.8rem;
+        top: 1.5rem;
+        left: 3.15rem;
+    }
+    
+    .ball3 {
+        top: 1.5rem;
+        left: 3.15rem;
+        offset-path: path('M50 5 Q 30 40 10 90');
+    }
+
+    .line4 {
+        width: 0.5rem;
+        height: 0.8rem;
+        top: 1.5rem;
+        left: 4.3rem;
+    }
+    
+    .ball4 {
+        top: 1.5rem;
+        left: 4.3rem;
+        offset-path: path('M5 5 Q 32 40 50 90');
+    }
+
+    .line5 {
+        width: 1.2rem;
+        height: 0.7rem;
+        top: 1.4rem;
+        left: 4.9rem;
+    }
+    
+    .ball5 {
+        top: 1.4rem;
+        left: 4.9rem;
+        offset-path: path('M2 5 Q 95 50 130 90');
+    }
+    
+    .line6 {
+        width: 1.2rem;
+        height: 0.4rem;
+        top: 0.8rem;
+        left: 4.61rem;
+    }
+    
+    .ball6 {
+        top: 0.8rem;
+        left: 4.61rem;
+        offset-path: path('M10 16 Q 95 17 140 28');
+    }
+
+}

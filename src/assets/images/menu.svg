@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>分组</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="修改0926" transform="translate(-1865.000000, -13.000000)" fill="#FFFFFF">
+            <g id="分组" transform="translate(1865.000000, 13.000000)">
+                <path d="M0.5,0.5 L0.5,33.5 L33.5,33.5 L33.5,0.5 L0.5,0.5 Z" id="矩形" stroke="#FFFFFF" fill-opacity="0.298039216" opacity="0.296107709"></path>
+                <path d="M8,10 L26,10 C26.5522847,10 27,10.4477153 27,11 L27,11 C27,11.5522847 26.5522847,12 26,12 L8,12 C7.44771525,12 7,11.5522847 7,11 L7,11 C7,10.4477153 7.44771525,10 8,10 Z" id="矩形"></path>
+                <path d="M8,16 L26,16 C26.5522847,16 27,16.4477153 27,17 L27,17 C27,17.5522847 26.5522847,18 26,18 L8,18 C7.44771525,18 7,17.5522847 7,17 L7,17 C7,16.4477153 7.44771525,16 8,16 Z" id="矩形-copy-4"></path>
+                <path d="M8,22 L26,22 C26.5522847,22 27,22.4477153 27,23 L27,23 C27,23.5522847 26.5522847,24 26,24 L8,24 C7.44771525,24 7,23.5522847 7,23 L7,23 C7,22.4477153 7.44771525,22 8,22 Z" id="矩形-copy-5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

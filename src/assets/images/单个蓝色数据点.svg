@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="154px" viewBox="0 0 5 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>分组 9 copy 26</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.2094467%" id="linearGradient-1">
+            <stop stop-color="#0BACD2" offset="0%"></stop>
+            <stop stop-color="#0BADD2" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Custom-Preset-Copy-9" transform="translate(-1159.000000, -459.000000)">
+            <g id="分组-9-copy-26" transform="translate(1159.000000, 459.000000)">
+                <polygon id="矩形" fill="url(#linearGradient-1)" points="2 4 3 4 3 157 2 157"></polygon>
+                <path d="M2.5,5 C3.88071179,5 5,3.88071179 5,2.5 C5,1.11928813 3.88071179,0 2.5,0 C1.11928813,0 0,1.11928813 0,2.5 C0,3.88071179 1.11928813,5 2.5,5 Z" id="椭圆形" fill="#0BC2E6"></path>
+            </g>
+        </g>
+    </g>
+</svg>

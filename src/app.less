@@ -1,0 +1,221 @@
+/*全局css样式*/
+:global {
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //font-family: 'PingFang Regular';
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /*隐藏文本*/
+  .textOverflow_hidden {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  /*路由切换动画——改变透明度*/
+  .normal-enter {
+    opacity: 0;
+    z-index: 10000;
+  }
+
+  .normal-enter.normal-enter-active {
+    opacity: 1;
+    transition: all 0.4s ease-in;
+  }
+
+  .normal-leave {
+    opacity: 1;
+  }
+
+  .normal-leave.normal-leave-active {
+    opacity: 0;
+    transition: all .4s ease-out;
+  }
+
+  /*路由切换动画——左移动*/
+  .left-enter {
+    position: absolute;
+    top: 0;
+    background: #fff;
+    z-index: 10000;
+    opacity: 1;
+    transform: translateX(100%);
+  }
+
+  .left-enter.left-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.4s ease-out;
+  }
+
+  .left-leave {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .left-leave.left-leave-active {
+    opacity: 1;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-out;
+  }
+
+  /*路由切换动画——右移动*/
+  .right-enter {
+    transform: translateX(-100%);
+  }
+
+  .right-enter.right-enter-active {
+    transform: translateX(0);
+    transition: all 0.4s ease-out;
+  }
+
+  .right-leave {
+    position: absolute;
+    top: 0;
+    background: #fff;
+    z-index: 10000;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .right-leave.right-leave-active {
+    opacity: 1;
+    transform: translateX(100%);
+    transition: all 0.4s ease-out;
+  }
+
+  /*初始化*/
+
+  li {
+    list-style: none;
+  }
+
+  .ant-menu-item a {
+    color: #373737;
+  }
+
+  .ant-form label {
+    font-size: 14px;
+  }
+
+  .float-left {
+    float: left;
+  }
+
+  .float-right {
+    float: right;
+  }
+  .float-clear:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    content: '';
+  }
+
+  .width-display {
+    width: 100%;
+    display: inline-block;
+  }
+
+  // .filter-bg {
+  //   min-height: 0;
+  //   margin-bottom: 15px;
+  //   padding: 15px 24px 0;
+  // }
+  .table-list {
+    .ant-pagination {
+      margin-top: 20px;
+    }
+  }
+
+  .margin-bottom-15 {
+    margin-bottom: 15px;
+  }
+
+  .margin-top-15 {
+    margin-top: 15px;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .ant-table-body {
+    overflow: auto !important;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .span-input-height {
+    height: 30px;
+    display: block;
+  }
+
+  .input-red {
+    border: 1px solid red !important;
+  }
+
+  .page-header {
+    background: #fff;
+    z-index: 0;
+    padding: 15px 24px 15px;
+    border-bottom: 1px solid #e8e8e8;
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 18px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+
+  .warpper {
+    background: none;
+  }
+
+  .wrapper-margin {
+    margin: 16px !important;
+  }
+
+  a {
+    color: #4873D3;
+  }
+
+  .ant-menu-item .anticon, .ant-menu-submenu-title .anticon {
+    font-size: 16px !important;
+  }
+
+  .ant-card-head {
+    font-size: 14px !important;
+  }
+
+  .margin-bottom-16 {
+    margin-bottom: 16px !important;
+  }
+
+  .h-relative {
+    position: relative;
+  }
+  .select-row {
+    background-color: #ffffff;
+    margin: 0 !important;
+    margin-bottom: 16px !important;
+    padding: 0.0667rem;
+  }
+  .select-year {
+    position: absolute !important;
+    top: 10px;
+    right: 20px;
+  }
+  .select-right {
+    float: right;
+  }
+}

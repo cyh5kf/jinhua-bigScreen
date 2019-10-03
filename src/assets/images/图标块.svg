@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="107px" height="44px" viewBox="0 0 107 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>分组 29</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-33.3%" y="-225.0%" width="166.7%" height="550.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-29.2%" y="-145.2%" width="158.5%" height="390.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#769CFF" offset="0%"></stop>
+            <stop stop-color="#074AF5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="修改0926" transform="translate(-592.000000, -179.000000)">
+            <g id="分组-29" transform="translate(592.000000, 179.000000)">
+                <path d="M53.5,44 C83.0472324,44 107,39.2989895 107,33.5 C107,27.7010102 83.0472324,23 53.5,23 C23.952766,23 0,27.7010102 0,33.5 C0,39.2989895 23.952766,44 53.5,44 Z" id="椭圆形" fill-opacity="0.337254902" fill="#3348BD" opacity="0.734491229"></path>
+                <path d="M54,38 C76.0913887,38 94,35.3137083 94,32 C94,28.6862915 76.0913887,26 54,26 C31.9086101,26 14,28.6862915 14,32 C14,35.3137083 31.9086101,38 54,38 Z" id="椭圆形" fill="#4357F6" opacity="0.596261144"></path>
+                <path d="M53.5,34 C60.9558437,34 67,33.1045694 67,32 C67,30.8954305 60.9558437,30 53.5,30 C46.0441559,30 40,30.8954305 40,32 C40,33.1045694 46.0441559,34 53.5,34 Z" id="椭圆形" fill="#0A177F" opacity="0.596261144" filter="url(#filter-1)"></path>
+                <g id="分组-27" transform="translate(40.000000, 0.000000)">
+                    <polygon id="路径-8" fill="#074AF5" points="13 30.6563413 25.871888 6.2 13 11.9788853"></polygon>
+                    <polygon id="路径-8-copy" fill="#4F7FFA" transform="translate(6.500000, 18.428171) scale(-1, 1) translate(-6.500000, -18.428171) " points="0 30.6563413 13 6.2 0 11.9617765"></polygon>
+                    <polygon id="路径-9" fill="#B0C2F1" points="0 6.2 25.8718854 6.2 12.9999993 11.9834919"></polygon>
+                    <path d="M13.3421053,8.95555556 C16.1761979,8.95555556 18.4736842,8.49291643 18.4736842,7.92222222 C18.4736842,7.35152798 16.1761979,6.88888889 13.3421053,6.88888889 C10.5080125,6.88888889 8.21052632,7.35152798 8.21052632,7.92222222 C8.21052632,8.49291643 10.5080125,8.95555556 13.3421053,8.95555556 Z" id="椭圆形-copy-2" fill="#074AF5" opacity="0.596261144" filter="url(#filter-2)"></path>
+                    <path d="M13,8.26666667 C15.2672741,8.26666667 17.1052632,6.41611017 17.1052632,4.13333333 C17.1052632,1.85055638 15.2672741,0 13,0 C10.7327258,0 8.89473684,1.85055638 8.89473684,4.13333333 C8.89473684,6.41611017 10.7327258,8.26666667 13,8.26666667 Z" id="椭圆形" fill="url(#linearGradient-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
