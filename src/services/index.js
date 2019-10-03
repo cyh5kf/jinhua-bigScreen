@@ -12,7 +12,8 @@ const gen = params => {
   const paramsArray = params.split(' ')
   if (paramsArray.length === 2) {
     method = paramsArray[0]
-    url = env === 'development'? apiPrefix + paramsArray[1]: paramsArray[1]
+    // url = env === 'development'? apiPrefix + paramsArray[1]: paramsArray[1]
+    url = apiPrefix + paramsArray[1]
   }
 
   return function(data, addUrl) {
