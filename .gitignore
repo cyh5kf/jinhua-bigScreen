@@ -12,6 +12,7 @@
 /build
 /dist
 dist.rar
+dist.zip
 
 # misc
 .DS_Store

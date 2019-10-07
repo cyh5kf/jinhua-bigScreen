@@ -18,6 +18,18 @@ let config = [
     models: () => [import("pages/screen/model")], //models可多个
     component: () => import("pages/screen")
   },
+  {
+    path: "/zjygzw",
+    component: () => import("pages/zjygzw")
+  },
+  {
+    path: "/sbruninfo",
+    component: () => import("pages/zjygzw")
+  },
+  {
+    path: "/wlxxaq",
+    component: () => import("pages/wlxxaq")
+  },
 ];
 
 function RouterConfig ({ history, app }) {
