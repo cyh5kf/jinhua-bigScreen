@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactEcharts from 'echarts-for-react'
+import titleFont from './constant'
 
 class BarWangLuo extends React.Component {
 
@@ -8,13 +9,17 @@ class BarWangLuo extends React.Component {
         let option ={};
         if (datas) {
             option = {
+                textStyle: {
+                    fontSize: 14
+                },
                 title: {
                     text: '网络信息安全种类及严重程度',
                     textStyle: {
                         color: '#7FAFF6',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
-                        fontSize: 14,
-                        fontWight: 'normal',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        // fontSize: 14,
+                        fontSize: titleFont,
+                        fontWeight: 'normal',
                     },
                     padding: [5, 5, 11, 0]
                 },
@@ -28,16 +33,16 @@ class BarWangLuo extends React.Component {
                     data: ['高', '中', '低'],
                     textStyle: {
                         color: 'rgba(234,239,255,0.5)',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
                         fontSize: 12,
-                        fontWight: 400,
+                        fontWeight: 400,
                     }
                 },
                 grid: {
                     left: 15,
                     top: 50,
                     right: 40,
-                    bottom: 70
+                    bottom: 80
                 },
                 xAxis: {
                     type: 'category',
@@ -47,15 +52,15 @@ class BarWangLuo extends React.Component {
                     axisLabel: {
                         interval: 0,
                         color: 'rgba(234,239,255,0.5)',
-                        rotate: -48
+                        rotate: -48,
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        fontSize: 14
                     },
                     axisTick: {
                         alignWithLabel: true,
                         lineStyle: {
                             color: 'rgba(255,251,234,0.1)',
-                            fontFamily: 'HelveticaNeue',
-                            fontSize: 12,
-                            fontWight: 400,
+                            fontWeight: 400,
                         }
                     },
                     axisLine: {
@@ -69,9 +74,9 @@ class BarWangLuo extends React.Component {
                     name: '数量',
                     nameTextStyle: {
                         color: 'rgba(234,239,255,0.5)',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
-                        fontSize: 12,
-                        fontWight: 400,
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        fontSize: 14,
+                        fontWeight: 400,
                     },
                     // nameLocation: 'center',
                     // nameRotate: -90,
@@ -86,7 +91,7 @@ class BarWangLuo extends React.Component {
                         show: false,
                         interval: 0,
                         color: 'rgba(234,239,255,0.5)',
-                        fontFamily: 'HelveticaNeue',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
                         fontSize: 12,
                         // formatter: '{value} %'
                     },
@@ -105,9 +110,9 @@ class BarWangLuo extends React.Component {
                     padding: 8,
                     textStyle: {
                         color: 'rgba(255,255,255,1)',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
                         fontSize: 14,
-                        fontWight: 400,
+                        fontWeight: 400,
                     },
                     formatter: {}
                 },
@@ -123,13 +128,14 @@ class BarWangLuo extends React.Component {
                     label: {
                         show: true,
                         color: 'rgba(249,249,249,1)',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
                         fontSize: 12,
-                        fontWight: 400,
+                        fontWeight: 400,
                     },
                     itemStyle: {
                         normal: {
-                            color: '#3372FF',
+                            // color: '#3372FF',
+                            color: '#11D1DE'
                             // barBorderRadius: [10, 10, 0, 0]
                         },
                     }
@@ -145,13 +151,14 @@ class BarWangLuo extends React.Component {
                     label: {
                         show: true,
                         color: 'rgba(249,249,249,1)',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
                         fontSize: 12,
-                        fontWight: 400,
+                        fontWeight: 400,
                     },
                     itemStyle: {
                         normal: {
-                            color: '#3F85FF',
+                            // color: '#3F85FF',
+                            color: '#3881FF'
                             // barBorderRadius: [10, 10, 0, 0]
                         },
                     }
@@ -167,22 +174,23 @@ class BarWangLuo extends React.Component {
                     label: {
                         show: true,
                         color: 'rgba(249,249,249,1)',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
                         fontSize: 12,
-                        fontWight: 400,
+                        fontWeight: 400,
                     },
                     itemStyle: {
                         normal: {
-                            color: '#59B1FF',
+                            // color: '#59B1FF',
+                            color: '#FF6500'
                             // barBorderRadius: [10, 10, 0, 0]
                         },
                     }
                 }]
             };
         }
-        
+
         return (
-            <ReactEcharts option={option} style={{ width: '100%', height: 190 }}></ReactEcharts>
+            <ReactEcharts option={option} style={{ width: '100%', height: 210 }}></ReactEcharts>
         )
     }
 }

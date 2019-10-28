@@ -1,0 +1,304 @@
+@import "./components/variable.less";
+
+:global {
+  .rc-container-box {
+    overflow: hidden;
+    .ant-statistic-content {
+      font-size: 16px;
+      color: #fff;
+      font-family: "Times New Roman", "PingFang SC", "Hiragino Sans GB",
+        "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    .right-part-card .ant-card-head-title {
+      text-align: right;
+    }
+
+    //本页面高度铺满
+    .layout-pane .ant-card {
+      display: flex;
+      flex-direction: column;
+      > .ant-card-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    //本页面card 背景
+    .layout-pane .ant-card {
+      background-color: transparent;
+      &.margin-right-zero {
+        margin-right: 0;
+      }
+      &.margin-left-zero {
+        margin-left: 0;
+      }
+      &.top-card-head-without-bg {
+        .moduleTitle-box {
+          margin-top: -0.15rem;
+          margin-bottom: 0.15rem;
+        }
+
+        .ant-card-body > .layout {
+          background-color: rgba(9, 43, 106, 0.24);
+          margin-left: -10px;
+          margin-right: -10px;
+          margin-bottom: -10px;
+        }
+      }
+      &:not(.top-card-head-without-bg) {
+        background-color: rgba(9, 43, 106, 0.24);
+      }
+    }
+
+    .layout-pane .ant-card-head-title {
+      padding: 0.06rem 0;
+      font-size: 0.25rem;
+      font-weight: normal;
+    }
+
+    .rcjg-box,
+    .bzcg-box {
+      display: flex;
+      flex-direction: column;
+      .ant-card-body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+
+    // .right-bottom-left-pane {
+    //   .left-bottom-item {
+    //     .direction-colume {
+    //       margin-top: 0.2rem;
+    //     }
+    //     .info-item-line {
+    //       .title {
+    //         font-size: @main-title-size;
+    //         .small-title {
+    //           font-size: @module-title-size;
+    //         }
+    //       }
+    //       .ant-statistic-content-value {
+    //         &,
+    //         .ant-statistic-content-value-decimal {
+    //           font-size: 24px;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+
+    .bzcg-box {
+      .bzcg-grid-layout .layout-pane {
+        padding: 0 0.06rem;
+      }
+    }
+
+    .right-bottom-pie .echarts-for-react {
+      top: -0.3rem;
+    }
+
+    .chart-box {
+      padding: 5px;
+      &.map-chart-box {
+        &::before {
+          content: "按地区";
+          color: #7faff6;
+          font-size: 24px;
+        }
+      }
+
+      &.chart-funnel-box {
+        &::before {
+          content: "按层次";
+          color: #7faff6;
+          font-size: 24px;
+        }
+      }
+      &.chart-pie-box {
+        &::before {
+          content: "按学历";
+          color: #7faff6;
+          font-size: 24px;
+          padding-left: 0.08rem;
+        }
+      }
+    }
+
+    .right-bottom-title {
+      flex: 1;
+      .compare-with-before {
+        .ant-statistic-content-prefix {
+          font-size: @module-title-size;
+        }
+        .ant-statistic-content-value {
+          font-size: @number-bigger-size;
+        }
+      }
+      .rank-statistic {
+        .ant-statistic-content-prefix,
+        .ant-statistic-content-suffix {
+          font-size: @module-title-size;
+        }
+        .ant-statistic-content-value {
+          font-size: @number-bigger-size;
+        }
+      }
+      .title {
+        color: @main-title-color;
+        margin-bottom: 20px;
+      }
+    }
+
+    .four-grid-box {
+      flex: 1;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      .title {
+        line-height: 36px;
+        color: @main-title-color;
+        font-size: @main-title-size;
+        padding: 0 0.06rem 0.1rem 0.06rem;
+        .small-title {
+          font-size: 14px;
+          margin-top: -10px;
+          color: @default-text-color;
+        }
+      }
+    }
+
+    .funnel-top-title {
+      color: @default-text-color;
+      font-size: @module-title-size;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .center-big-title {
+      color: @light-blue;
+      font-size: 100px;
+      position: absolute;
+      top: -0.4rem;
+      line-height: 1.8rem;
+      height: 1.8rem;
+      left: 50%;
+      width: 400px;
+      text-align: center;
+      margin-left: -200px;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-image: unset;
+      background-position: center top;
+      font-family: "Quartz Regular";
+
+      > span {
+        color: #fff;
+        font-size: 24px;
+        position: absolute;
+        top: 1.3rem;
+        line-height: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: normal;
+      }
+    }
+
+    .rc-pane-header > .layout-pane {
+      padding-top: 66px;
+      position: relative;
+      .pane-title-box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 73px;
+        background-repeat: no-repeat;
+        width: 4rem;
+        padding: 0 0.2rem;
+        font-size: @3rem-font-size;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        border-image: linear-gradient(
+            to right,
+            rgba(2, 128, 255, 1),
+            rgba(34, 238, 254, 0.5),
+            rgba(34, 238, 254, 0)
+          )
+          30 30;
+        .left-small-title {
+          color: @main-title-color;
+          font-size: @16px-to-rem-size;
+          margin-right: 0.15rem;
+        }
+        .left-icon {
+          margin-right: 0.15rem;
+        }
+        .right-icon {
+          margin-left: 0.15rem;
+        }
+        &.right {
+          text-align: right;
+          left: auto;
+          border-image: linear-gradient(
+              to left,
+              rgba(2, 128, 255, 1),
+              rgba(34, 238, 254, 0.5),
+              rgba(34, 238, 254, 0)
+            )
+            30 30;
+        }
+        // .left-tip-title {
+        //   color: @light-blue;
+        //   font-size:
+        // }
+      }
+    }
+  }
+}
+.container {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0.7rem;
+  display: flex;
+}
+
+.screen {
+  width: 100%;
+  height: 100vh;
+  color: #7faff6;
+  background: url(../../assets/images/beijing.jpg) no-repeat;
+  background-size: 100%;
+  position: relative;
+
+  header {
+    width: 100%;
+    height: 1.66rem;
+    background: url(../../assets/images/header_bg.png) no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-size: 0.25rem;
+    color: #fff;
+    position: relative;
+    padding-top: 0.1rem;
+
+    .title {
+      margin-left: -0.5rem;
+    }
+
+    .time {
+      position: absolute;
+      top: 0.225rem;
+      right: 0.817rem;
+      font-size: 0.1667rem;
+    }
+  }
+}

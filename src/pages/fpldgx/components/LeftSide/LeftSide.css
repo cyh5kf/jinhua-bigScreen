@@ -1,0 +1,65 @@
+.leftContent {
+  padding: 0.125rem;
+  margin-bottom: 0.0833rem;
+  position: relative;
+}
+.leftContent p {
+  margin-bottom: 0;
+}
+.leftContent .under_line {
+  padding-bottom: 0.125rem;
+  margin-bottom: 0.125rem;
+  border-bottom: 1px solid rgba(255, 251, 234, 0.3);
+}
+.leftContent .line_left_one {
+  width: 100%;
+}
+.leftContent b {
+  color: #18F0FF;
+  font-weight: 500;
+}
+.leftContent b.has_margin_right {
+  margin-right: 0.1333rem;
+}
+.leftContent b.orange {
+  color: #FFA206;
+  font-size: 0.1667rem;
+}
+.leftContent .label_text {
+  margin-right: 0.1917rem;
+}
+.leftContent .fixed_right {
+  position: absolute;
+  right: 0.2083rem;
+}
+.is_active {
+  box-shadow: rgba(6, 91, 209, 0.9) 0 0 0.125rem 3px;
+}
+.flex_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.flex_hasBg {
+  padding: 22px 18px;
+  background: rgba(0, 40, 79, 0.2);
+  margin-bottom: 0.125rem;
+}
+.flex_hasBg > p:last-child {
+  display: flex;
+  align-items: baseline;
+}
+.fontsize_small {
+  font-size: 0.1rem;
+  align-items: baseline;
+}
+.line_height {
+  line-height: 0.25rem;
+}

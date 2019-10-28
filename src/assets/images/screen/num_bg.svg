@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="23px" viewBox="0 0 42 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>分组 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="主屏最新" transform="translate(-157.000000, -121.000000)">
+            <g id="分组-3" transform="translate(157.000000, 122.000000)">
+                <rect id="矩形" fill-opacity="0.15" fill="#00F0FF" x="0" y="0" width="42" height="22"></rect>
+                <polyline id="路径-50" stroke="#00F0FF" points="4.008514 0.473106454 0.519016369 0.473106454 0.519016369 4.09535272"></polyline>
+                <polyline id="路径-50" stroke="#00F0FF" transform="translate(2.263765, 19.679139) scale(1, -1) translate(-2.263765, -19.679139) " points="4.008514 17.8680158 0.519016369 17.8680158 0.519016369 21.4902621"></polyline>
+                <polyline id="路径-50" stroke="#00F0FF" transform="translate(39.744749, 2.284230) scale(-1, 1) translate(-39.744749, -2.284230) " points="41.4894976 0.473106454 38 0.473106454 38 4.09535272"></polyline>
+                <polyline id="路径-50" stroke="#00F0FF" transform="translate(39.744749, 19.679139) scale(-1, -1) translate(-39.744749, -19.679139) " points="41.4894976 17.8680158 38 17.8680158 38 21.4902621"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

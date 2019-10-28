@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="12px" height="43px" viewBox="0 0 12 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="362px" height="84px" viewBox="0 0 362 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>分组 13</title>
+    <title>合并形状</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <filter x="-156.5%" y="-156.5%" width="412.9%" height="412.9%" filterUnits="objectBoundingBox" id="filter-1">
-            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        <path d="M192.229413,39.9793892 L180.434542,54.970266 L169.698836,39.9760429 L31,39.9554427 L31,34 L331,34.0151658 L331,40 L192.229413,39.9793892 Z" id="path-1"></path>
+        <filter x="-17.0%" y="-243.2%" width="134.0%" height="586.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0941176471   0 0 0 0 0.941176471   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.6520051%" id="linearGradient-2">
-            <stop stop-color="#A1C5FF" offset="0%"></stop>
-            <stop stop-color="#3A8AFF" offset="9.18533237%"></stop>
-            <stop stop-color="#8DB9FF" stop-opacity="0" offset="100%"></stop>
-        </linearGradient>
-        <filter x="-111.4%" y="-7.7%" width="322.7%" height="115.4%" filterUnits="objectBoundingBox" id="filter-3">
-            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.6520051%" id="linearGradient-4">
-            <stop stop-color="#DEEBFF" offset="0%"></stop>
-            <stop stop-color="#3A8AFF" offset="16.1352962%"></stop>
-            <stop stop-color="#8DB9FF" stop-opacity="0" offset="100%"></stop>
-        </linearGradient>
     </defs>
-    <g id="天津港大屏" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="系统首页-copy-7" transform="translate(-632.000000, -846.000000)">
-            <g id="分组-13" transform="translate(636.000000, 850.000000)">
-                <circle id="椭圆形-copy-16" fill="#86B2F3" filter="url(#filter-1)" cx="1.91742933" cy="1.91742933" r="1.91742933"></circle>
-                <path d="M1.85177223,0.464076367 L1.85177223,0.464076367 C2.5407898,0.410721764 3.14260136,0.926028419 3.19595597,1.61504599 C3.19957075,1.66172707 3.20056266,1.70857423 3.19892702,1.75536648 L1.88155216,39.4426475 C1.88152029,39.4435593 1.8807719,39.444282 1.87985955,39.444282 L1.87985955,39.444282 C1.87894678,39.444282 1.87819764,39.4435598 1.87816426,39.4426476 L0.506908804,1.9714962 C0.478296549,1.18963301 1.0717209,0.524480238 1.85177223,0.464076367 Z" id="矩形-copy-10" fill="url(#linearGradient-2)" filter="url(#filter-3)"></path>
-                <path d="M1.94159491,0.665271404 L1.94159491,0.665271404 C2.55351651,0.665271404 3.04957697,1.16133187 3.04957697,1.77325347 C3.04957697,1.7839546 3.04942194,1.79465518 3.04911193,1.80535182 L1.95835569,39.4406479 C1.95829704,39.4426717 1.95663945,39.444282 1.95461473,39.444282 L1.95461473,39.444282 C1.95258962,39.444282 1.95093135,39.4426722 1.95087133,39.4406479 L0.834842778,1.8053294 C0.816717147,1.19408707 1.29753323,0.683883536 1.90877555,0.665757906 C1.91971233,0.665433589 1.93065332,0.665271404 1.94159491,0.665271404 Z" id="矩形-copy-11" fill="url(#linearGradient-4)"></path>
-            </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="合并形状">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#18F0FF" fill-rule="evenodd" xlink:href="#path-1"></use>
         </g>
     </g>
 </svg>

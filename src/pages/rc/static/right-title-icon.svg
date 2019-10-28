@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="31px" viewBox="0 0 29 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>pipeiguize</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#25E2FE" offset="0%"></stop>
+            <stop stop-color="#0283FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="人才指数-（加大字号范本）" transform="translate(-1864.000000, -111.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="pipeiguize" transform="translate(1864.000000, 111.000000)">
+                <path d="M26.6200605,22.8368241 L26.6200605,12.1645968 L15.9917955,19.0074679 L15.9917955,27.0142857 L29,19.0074286 L29,22.4095949 L14.5,31 L0,22.4096343 L0,8.59036572 L14.5,0 L29,8.59036572 L29,21.4758946 L26.6200605,22.8368241 Z M14.6770497,16.8370349 L26.0278733,9.81162794 L21.120016,7.35812064 L10.111632,14.1928038 L14.6770497,16.8370743 L14.6770497,16.8370349 Z M18.212175,5.51634668 L14.3053431,3.09996064 L3.18814693,10.1047403 L7.43119717,12.6771302 L18.2121358,5.5163073 L18.212175,5.51634668 Z M2.75825848,12.9088724 L2.75825848,20.7261867 L13.2068523,27.0142857 L13.2068523,19.0010908 L5.30800915,14.4572191 L2.75825848,12.9088724 Z" id="形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>

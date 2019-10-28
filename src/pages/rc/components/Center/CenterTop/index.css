@@ -1,0 +1,9 @@
+.centerTop {
+  width: 100%;
+}
+.centerTop .dz {
+  height: 400px;
+  width: 100%;
+  border: 1px solid red;
+  background: url(../../../../../assets/images/劳动关系切图/dizuo.png) no-repeat top center;
+}

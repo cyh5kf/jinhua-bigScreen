@@ -1,0 +1,107 @@
+.rightContent {
+    padding: 0.125rem;
+    margin-bottom: 0.0833rem;
+    position: relative;
+    p {
+        margin-bottom: 0;
+        align-items: baseline;
+        span>label {
+            font-size: 0.1rem;
+        }
+    }
+    .under_line {
+        padding-bottom: 0.125rem;
+        margin-bottom: 0.125rem;
+        border-bottom: 1px solid rgba(255,251,234,0.3);
+    }
+    .line_left_one {
+        width: 100%;
+    }
+    b {
+        color: #18F0FF;
+        font-weight: 500;
+        font-size: 0.1333rem;
+        &.has_margin_right {
+         margin-right: 0.1333rem;
+        }
+        &.orange {
+            color: #FFA206;
+            font-size: 0.1667rem;
+        }
+    }
+    .label_text {
+        margin-right: 0.1917rem;
+    }
+    .fixed_right {
+        position: absolute;
+        right: 0.2083rem;
+    }
+}
+.is_active {
+    box-shadow: rgba(6,91,209,0.9) 0 0 0.125rem 0.025rem;
+}
+.flex_item {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.flex_column {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    // justify-content: space-around;
+    justify-content: space-between;
+}
+.flex_hasBg{
+    overflow: auto;
+    // padding: 0.1rem 0.125rem 0.0417rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    &>p:last-child{
+        display: flex;
+        align-items: baseline;
+    }
+    margin-bottom: 15px;
+}
+.fontsize_small{
+    font-size: 0.1rem;
+    align-items: baseline;
+}
+.gdp {
+    margin-top: 0.2083rem;
+    width: 100%;
+    position: relative;
+    .val{
+        position: absolute;
+        width: 23%;
+        height: 0.0333rem;
+        background: linear-gradient( to right, #D25F0C, #ECFA31);
+        border-radius: 4px;
+    }
+    .all{
+        position: absolute;
+        width: 100%;
+        height: 0.0333rem;
+        background: rgba(255, 255, 255, 0.29);
+        border-radius: 4px;
+    }
+}
+.hasBg{
+    padding: 0.1rem 0.125rem 0.0417rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+.text_align_right{
+    text-align: right;
+}
+.margin_bottom {
+    margin-bottom: 0.1083rem!important;
+}
+:global{
+    .lunbo_box {
+        height: 1.1667rem;
+        overflow: hidden;
+        margin: 0.0833rem 0 0.0417rem;
+    }
+}

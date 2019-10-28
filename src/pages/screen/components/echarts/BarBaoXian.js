@@ -10,12 +10,12 @@ class BarBaoXian extends React.Component {
     render() {
         let option = {
             title: {
-                text: '社会保险费减增绩效 - 有效企业数',
+                text: '社会保险费减征绩效 - 有效企业数',
                 textStyle: {
                     color: '#7FAFF6',
                     fontFamily: 'PingFangSC-Regular,PingFangSC',
                     fontSize: 14,
-                    fontWight: 'normal',
+                    fontWeight: 'normal',
                 },
                 padding: [5, 5, 11, 0]
             },
@@ -40,7 +40,7 @@ class BarBaoXian extends React.Component {
                         color: 'rgba(255,251,234,0.1)',
                         fontFamily: 'HelveticaNeue',
                         fontSize: 12,
-                        fontWight: 400,
+                        fontWeight: 400,
                     }
                 },
                 axisLine: {
@@ -56,7 +56,7 @@ class BarBaoXian extends React.Component {
                     color: 'rgba(234,239,255,0.5)',
                     fontFamily: 'PingFangSC-Regular,PingFangSC',
                     fontSize: 12,
-                    fontWight: 400
+                    fontWeight: 400
                 },
                 axisLine: {
                     show: false
@@ -87,7 +87,7 @@ class BarBaoXian extends React.Component {
                     color: 'rgba(255,255,255,1)',
                     fontFamily: 'PingFangSC-Regular,PingFangSC',
                     fontSize: 14,
-                    fontWight: 400,
+                    fontWeight: 400,
                 },
                 formatter: {}
             },
@@ -99,13 +99,16 @@ class BarBaoXian extends React.Component {
                     normal: {
                         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                             offset: 0,
-                            color: '#FFD99D'
+                            // color: '#FFD99D'
+                            color: '#FF6500'
                         }, {
                             offset: 0.1,
-                            color: '#FF9B00'
+                            // color: '#FF9B00'
+                            color: '#3881FF'
                         }, {
                             offset: 1,
-                            color: '#BB6317'
+                            // color: '#BB6317'
+                            color: '#11D1DE'
                         }]),
                         barBorderRadius: [10, 10, 0, 0]
                     },

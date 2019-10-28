@@ -1,0 +1,173 @@
+:global {
+    /*组件入场前的状态*/
+    .animation-enter{
+        opacity:0;
+        width: 0;
+    }
+
+    /*组件正在入场时候的动画, all 指的是所有属性一起变化，ease-in-out 先快后慢的一种时间线*/
+    .animation-enter-active{
+        // width: 100%;
+        opacity:1;
+        transition:all 1000ms ease-in-out;
+    }
+
+    /*组件出场前的动画*/
+    .animation-exit {
+        opacity: 1;
+    }
+
+    /*组件正在出场的动画*/
+    .animation-exit-active {
+        opacity:0;
+        width: 0;
+        transition:all 1000ms ease-out;
+    }
+
+    // 数字上升
+    .am-water1 {
+        position: absolute;
+        top: 3.3rem;
+        left: 3.5rem;
+    }
+
+    .am-water2 {
+        position: absolute;
+        top: 4.35rem;
+        left: 4.02rem;
+    }
+
+    .am-water3 {
+        position: absolute;
+        top: 3.2rem;
+        left: 4.4rem;
+    }
+
+    .am-water4 {
+        position: absolute;
+        top: 4rem;
+        left: 4.9rem;
+    }
+
+    .am-water5 {
+        position: absolute;
+        top: 2.58rem;
+        left: 5.65rem;
+    }
+
+    .am-water6 {
+        position: absolute;
+        top: 3.3rem;
+        left: 6.57rem;
+    }
+
+    .am-water7 {
+        position: absolute;
+        top: 2.5rem;
+        right: 5.9rem;
+    }
+
+    .am-water8 {
+        position: absolute;
+        top: 3rem;
+        right: 4.92rem;
+    }
+
+    .am-water9 {
+        position: absolute;
+        top: 2.85rem;
+        right: 3.92rem;
+    }
+
+    // 区域名称
+    .area {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+            color: #fff;
+            margin-bottom: 0.06rem;
+        }
+
+        img {
+            width: 0.425rem;
+            height: 0.4rem;
+            display: block;
+        }
+    }
+    .area1 {
+        top: 3.3rem;
+        left: 3.3rem;
+    }
+
+    .area2 {
+        top: 4.35rem;
+        left: 3.84rem;
+    }
+
+    .area3 {
+        top: 3.2rem;
+        left: 4.2rem;
+    }
+
+    .area4 {
+        top: 4rem;
+        left: 4.7rem;
+    }
+
+    .area5 {
+        top: 2.6rem;
+        left: 5.45rem;
+    }
+
+    .area6 {
+        top: 3.3rem;
+        left: 6.35rem;
+    }
+
+    .area7 {
+        top: 2.5rem;
+        right: 5.68rem;
+    }
+
+    .area8 {
+        top: 3rem;
+        right: 4.7rem;
+    }
+
+    .area9 {
+        top: 2.85rem;
+        right: 3.68rem;
+    }
+
+    .verticalProgressBar {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3000;
+      }
+
+    .verticalProgressBar .number {
+        font-size: 0.3rem;
+        text-align: center;
+        margin-bottom: 0;
+        color: #15d2ff;
+    }
+
+    .verticalProgressBar ul {
+        list-style: none;
+        width: 14px;
+        margin: 0 auto;
+    }
+
+    .verticalProgressBar li {
+        height: 4px;
+        background-color: #15d2ff;
+        border-radius: 2px;
+        margin-bottom: 4.3px;
+    }
+
+}

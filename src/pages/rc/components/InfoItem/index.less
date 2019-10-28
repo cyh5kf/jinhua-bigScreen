@@ -1,0 +1,82 @@
+@import "../variable.less";
+
+@item-line-height: 0.28rem;
+
+:global {
+  .rc-container-box {
+    .info-item-statistic {
+      padding: 0 0.1rem;
+      line-height: @item-line-height;
+      flex: 1;
+      .info-item-line {
+        color: @main-title-color;
+        font-size: @2rem-font-size;
+        .small-title {
+          font-size: @20px-to-rem-size;
+          color: @default-text-color;
+        }
+      }
+
+      .direction-colume {
+        display: flex;
+        .ant-statistic {
+          flex: 1;
+          flex-direction: row;
+        }
+      }
+
+      .info-item-line {
+        display: flex;
+        justify-content: space-between;
+
+        .title-number {
+          .ant-statistic-content-value {
+            &,
+            & .ant-statistic-content-value-decimal {
+              font-size: @30px-to-rem-size;
+            }
+          }
+        }
+
+        .ant-statistic-content-value {
+          color: @light-blue;
+          font-size: @bigger-size;
+        }
+        .ant-statistic-content-suffix {
+          color: @default-text-color;
+          font-size: @content-number-suffix-size;
+        }
+      }
+
+      .compare-with-before {
+        .ant-statistic-content-prefix {
+          font-size: @22px-to-rem-size;
+        }
+        .ant-statistic-content-value,
+        .ant-statistic-content-suffix {
+          &,
+          & .ant-statistic-content-value-decimal {
+            font-size: @30px-to-rem-size;
+          }
+        }
+      }
+
+      .rank {
+        .ant-statistic-content {
+          color: @default-text-color;
+          font-size: @22px-to-rem-size;
+        }
+        .ant-statistic-content-value {
+          font-size: @22px-to-rem-size;
+        }
+        .ant-statistic-content-suffix {
+          font-size: @2rem-font-size;
+        }
+      }
+
+      .ant-statistic {
+        line-height: @item-line-height;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="48px" viewBox="0 0 51 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>分组 18</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.5730461%" y1="9.7129701%" x2="42.8383174%" y2="109.198913%" id="linearGradient-1">
+            <stop stop-color="#E6E6E6" offset="0%"></stop>
+            <stop stop-color="#999999" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="11.9800137%" y1="27.1822613%" x2="126.681026%" y2="27.1822613%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#DADADA" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-3" points="26.2168982 8.46454407 25.6745435 37.3822773 35.8464185 9.01136991"></polygon>
+        <linearGradient x1="67.9351509%" y1="79.6173408%" x2="24.4126634%" y2="13.6754687%" id="linearGradient-4">
+            <stop stop-color="#DDDDE1" offset="0%"></stop>
+            <stop stop-color="#A0A0A0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="25.6203122%" y1="16.080121%" x2="100%" y2="16.080121%" id="linearGradient-5">
+            <stop stop-color="#9E9E9E" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.358469815%" x2="50%" y2="99.9105835%" id="linearGradient-6">
+            <stop stop-color="#898989" offset="0%"></stop>
+            <stop stop-color="#BDBDBD" offset="99.9102618%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="36.2699103%" x2="89.8230253%" y2="67.3494974%" id="linearGradient-7">
+            <stop stop-color="#ABABAB" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#A5A5A5" offset="0%"></stop>
+            <stop stop-color="#F9F9F9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="34.7838696%" x2="0%" y2="34.7838696%" id="linearGradient-9">
+            <stop stop-color="#FFFFFF" stop-opacity="0.259260271" offset="0%"></stop>
+            <stop stop-color="#39A9FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-10" points="25.6917796 -1.0658141e-14 22.875 8.85718059 25.6917796 38.2673631 26.373867 8.85718059"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="劳动关系最新-copy-2" transform="translate(-774.000000, -481.000000)">
+            <g id="分组-18" transform="translate(775.000000, 481.000000)">
+                <g id="分组-30" transform="translate(0.000000, 29.973762)">
+                    <path d="M24.6212121,16.6666667 C38.2191313,16.6666667 49.2424242,12.935706 49.2424242,8.33333333 C49.2424242,3.73096044 38.2191313,3.55271368e-14 24.6212121,3.55271368e-14 C11.0232922,3.55271368e-14 3.53495011e-12,3.73096044 3.53495011e-12,8.33333333 C3.53495011e-12,12.935706 11.0232922,16.6666667 24.6212121,16.6666667 Z" id="椭圆形" stroke="#C7C7C7" opacity="0.403041303"></path>
+                    <path d="M25,15.1515152 C37.5519254,15.1515152 47.7272727,12.098911 47.7272727,8.33333333 C47.7272727,4.56775551 37.5519254,1.51515152 25,1.51515152 C12.4480739,1.51515152 2.27272727,4.56775551 2.27272727,8.33333333 C2.27272727,12.098911 12.4480739,15.1515152 25,15.1515152 Z" id="椭圆形" stroke="#D5DADE" opacity="0.596563458"></path>
+                    <path d="M25,13.6363636 C36.7151304,13.6363636 46.2121212,11.2621159 46.2121212,8.33333333 C46.2121212,5.40455058 36.7151304,3.03030303 25,3.03030303 C13.284869,3.03030303 3.78787879,5.40455058 3.78787879,8.33333333 C3.78787879,11.2621159 13.284869,13.6363636 25,13.6363636 Z" id="椭圆形" stroke="#D1D9DE" opacity="0.796061218"></path>
+                    <path d="M24.6212121,12.1212121 C34.8719512,12.1212121 43.1818182,10.4253209 43.1818182,8.33333333 C43.1818182,6.24134565 34.8719512,4.54545455 24.6212121,4.54545455 C14.3704725,4.54545455 6.06060606,6.24134565 6.06060606,8.33333333 C6.06060606,10.4253209 14.3704725,12.1212121 24.6212121,12.1212121 Z" id="椭圆形" fill="#CAD1D6" opacity="0.800000012"></path>
+                    <path d="M25.3787879,9.84848485 C29.7719618,9.84848485 33.3333333,9.17012836 33.3333333,8.33333333 C33.3333333,7.49653826 29.7719618,6.81818182 25.3787879,6.81818182 C20.9856138,6.81818182 17.4242424,7.49653826 17.4242424,8.33333333 C17.4242424,9.17012836 20.9856138,9.84848485 25.3787879,9.84848485 Z" id="椭圆形" fill="#CFD5DA"></path>
+                </g>
+                <g id="路径-48">
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
+                    <use fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                </g>
+                <polygon id="路径-49" fill="url(#linearGradient-4)" points="25.6745435 4.24549285e-13 26.185841 8.79266907 27.1721114 8.79266907 34.0619517 14.0455577 30.7440926 8.9992281 35.8464185 8.9992281"></polygon>
+                <polygon id="路径-47" fill="url(#linearGradient-5)" points="30.5964185 9.01136991 34.0619517 14.0455577 35.8464185 9.01136991"></polygon>
+                <polygon id="路径-43" fill="url(#linearGradient-6)" points="25.6745435 6.03961325e-14 15 8.79266907 25.6745435 38.2673631 23.1806144 8.79266907"></polygon>
+                <polygon id="路径-46" fill="url(#linearGradient-7)" points="25.6745435 7.46069873e-13 15 8.79266907 22.21875 8.79266907"></polygon>
+                <polygon id="路径-44" fill="#EDEDED" points="25.7167088 9.76996262e-14 22.21875 8.61511076 24.7573649 27.6629585 23.9677294 8.61511076"></polygon>
+                <g id="路径-45">
+                    <use fill="url(#linearGradient-8)" xlink:href="#path-10"></use>
+                    <use fill="url(#linearGradient-9)" xlink:href="#path-10"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

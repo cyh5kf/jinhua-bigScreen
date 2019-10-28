@@ -1,0 +1,72 @@
+@import "../variable.less";
+
+:global {
+  .rc-container-box {
+    .moduleTitle-box {
+      display: flex;
+      font-size: 14px;
+      // justify-content: center;
+      // background-color: rgba(179, 166, 166, 0.1);
+      line-height: 36px;
+      &.right-title {
+        justify-content: flex-end;
+      }
+      .title {
+        color: @main-title-color;
+        font-size: @2rem-font-size;
+      }
+      // > div {
+      //   margin-left: @item-margin-left;
+      // }
+      .center-number {
+        .ant-statistic-content-prefix {
+          color: @default-text-color;
+          font-size: @22px-to-rem-size;
+        }
+        .ant-statistic-content-value .ant-statistic-content-value-int {
+          font-size: @30px-to-rem-size;
+        }
+        .ant-statistic-content-suffix {
+          color: @light-blue;
+          font-size: @22px-to-rem-size;
+        }
+      }
+      .compare-with-before {
+        .ant-statistic-content-prefix {
+          color: @default-text-color;
+          margin-right: 10px;
+          font-size: @22px-to-rem-size;
+        }
+        .ant-statistic-content-value {
+          &,
+          & .ant-statistic-content-value-decimal {
+            font-size: @30px-to-rem-size;
+          }
+        }
+        .ant-statistic-content-suffix {
+          font-size: @30px-to-rem-size;
+        }
+      }
+      .rank-statistic {
+        .ant-statistic-content-value {
+          font-size: @30px-to-rem-size;
+        }
+        .ant-statistic-content-prefix,
+        .ant-statistic-content-suffix {
+          margin-right: 20px;
+          font-size: @22px-to-rem-size;
+        }
+      }
+      .ant-statistic {
+        line-height: 36px;
+        margin-left: 0.25rem;
+        // .ant-statistic-content-value {
+        //   .ant-statistic-content-value-int,
+        //   .ant-statistic-content-value-decimal {
+        //     font-size: 0.2rem;
+        //   }
+        // }
+      }
+    }
+  }
+}

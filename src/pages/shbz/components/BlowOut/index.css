@@ -1,0 +1,409 @@
+@keyframes bimg1 {
+  0% {
+    top: 450px;
+    transform: scale(0);
+  }
+
+  100% {
+    top: -40px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg2 {
+  0% {
+    left: 220px;
+    transform: scale(0);
+  }
+
+  100% {
+    left: 220px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg12 {
+  0% {
+    top: 450px;
+    transform: scale(0);
+  }
+
+  100% {
+    top: 50px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg22 {
+  0% {
+    left: 220px;
+    transform: scale(0);
+  }
+
+  100% {
+    left: 140px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg13 {
+  0% {
+    top: 450px;
+    transform: scale(0);
+  }
+
+  100% {
+    top: 70px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg23 {
+  0% {
+    left: 220px;
+    transform: scale(0);
+  }
+
+  100% {
+    left: 300px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg14 {
+  0% {
+    top: 450px;
+    transform: scale(0);
+  }
+
+  100% {
+    top: 30px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg24 {
+  0% {
+    left: 220px;
+    transform: scale(0);
+  }
+
+  100% {
+    left: -30px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg15 {
+  0% {
+    top: 450px;
+    transform: scale(0);
+  }
+
+  100% {
+    top: 30px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg25 {
+  0% {
+    left: 220px;
+    transform: scale(0);
+  }
+
+  100% {
+    left: 450px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg16 {
+  0% {
+    top: 450px;
+    transform: scale(0);
+  }
+
+  100% {
+    top: 160px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg26 {
+  0% {
+    left: 220px;
+    transform: scale(0);
+  }
+
+  100% {
+    left: 230px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg17 {
+  0% {
+    top: 450px;
+    transform: scale(0);
+  }
+
+  100% {
+    top: 190px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg27 {
+  0% {
+    left: 220px;
+    transform: scale(0);
+  }
+
+  100% {
+    left: 100px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg18 {
+  0% {
+    top: 450px;
+    transform: scale(0);
+  }
+
+  100% {
+    top: 180px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg28 {
+  0% {
+    left: 220px;
+    transform: scale(0);
+  }
+
+  100% {
+    left: 350px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg19 {
+  0% {
+    top: 450px;
+    transform: scale(0);
+  }
+
+  100% {
+    top: 290px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg29 {
+  0% {
+    left: 220px;
+    transform: scale(0);
+  }
+
+  100% {
+    left: 200px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg20 {
+  0% {
+    top: 450px;
+    transform: scale(0);
+  }
+
+  100% {
+    top: 90px;
+    transform: scale(1.3);
+  }
+
+}
+
+@keyframes bimg30 {
+  0% {
+    left: 220px;
+    transform: scale(0);
+  }
+
+  100% {
+    left: 40px;
+    transform: scale(1.3);
+  }
+
+}
+
+#item1 {
+  animation: bimg1 2.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards, bimg2 2.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+
+#item2 {
+  animation: bimg12 2.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards, bimg22 2.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+
+#item3 {
+  animation: bimg13 3s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards, bimg23 3s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+
+#item4 {
+  animation: bimg14 2.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards, bimg24 2.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+
+#item5 {
+  animation: bimg15 3s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards, bimg25 3s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+  width: 90px;
+  height: 40px;
+  position: absolute;
+}
+
+#item6 {
+  animation: bimg16 3.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards, bimg26 3.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+
+#item7 {
+  animation: bimg17 4s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards, bimg27 4s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+
+#item8 {
+  animation: bimg18 4.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards, bimg28 4.5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+
+#item9 {
+  animation: bimg19 5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards, bimg29 5s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+
+#item10 {
+  animation: bimg20 2.5s cubic-bezier(0.3, 0.1, 0.3, 1.0) forwards, bimg30 2.5s cubic-bezier(0.3, 0.1, 0.3, 1.0) forwards;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.font-size-28 {
+  font-size: 28px;
+}
+
+.font-size-26 {
+  font-size: 26px;
+}
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+  color: rgb(132, 133, 133);
+}
+
+.font-size-12 {
+  font-size: 12px;
+  color: #fff;
+}
+
+.gold-color-g {
+  background: linear-gradient(to top, rgba(222, 175, 84), #fff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gold-color {
+  color: rgb(214, 172, 24);
+}
+
+.silver-color-g {
+  background: linear-gradient(to top, rgb(181, 181, 181), #fff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.silver-color {
+  color: rgb(181, 181, 181);
+}
+
+.bronze-color-g {
+  background: linear-gradient(to top, #C6A085, #fff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.bronze-color {
+  color: #C6A085;
+}
+
+.white-color {
+  color: #fff;
+}

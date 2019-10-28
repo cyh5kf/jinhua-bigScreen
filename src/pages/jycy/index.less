@@ -1,0 +1,199 @@
+.screen {
+  width: 100%;
+  height: 100vh;
+  color: #7FAFF6;
+  background: url(../../assets/images/beijing.jpg) no-repeat;
+  background-size: 100%;
+  position: relative;
+
+  header {
+    width: 100%;
+    height: 1.66rem;
+    background: url(../../assets/images/jycy/header_bg.png) no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-size: 0.22rem;
+    color: #fff;
+    position: relative;
+    padding-top: 0.1rem;
+    .title {
+      em {
+        color: aqua;
+        font-style: normal;
+      }
+    }
+    .time {
+      position: absolute;
+      top: 0.225rem;
+      right: 0.817rem;
+      font-size: 0.1667rem;
+    }
+  }
+}
+.main{
+    width: 100%;
+    height: 87%;
+    position: relative;
+}
+.main .content{
+  position: absolute;
+  background:rgba(255,255,255,0.05);
+  padding: 10px
+}
+.main .left_1{
+  top: 0;
+  left: 0.5%;
+  width: 24%;
+  height: 65%;
+  padding: 0}
+.main .left_2{
+  top: 0;
+  left: 25.5%;
+  width: 24%;
+  height: 31.66666%;
+}
+.main .left_3{
+  top: 33.333333%;
+  left: 25.5%;
+  width: 24%;
+  height: 31.66666%;
+}
+.main .left_bottom{
+  top: 66.66666%;
+  left: 0.5%;
+  width: 49%;
+  height: 35.66666%;
+}
+.main .middle_1{
+  top: 0;
+  left: 50.5%;
+  width: 24%;
+  height: 50.33333%;
+}
+.main .middle_2{
+  top: 52%;
+  left: 50.5%;
+  width: 24%;
+  height:50.33333%;
+}
+.main .right_1{
+  top: 0;
+  left: 75.5%;
+  width: 24%;
+  height:33.66666%;
+}
+.main .right_2{
+  top: 35.3333%;
+  left: 75.5%;
+  width: 24%;
+  height:32.66666%;
+}
+.main .right_3{
+  top:69.66666%;
+  left: 75.5%;
+  width: 24%;
+  height: 32.66666%;
+}
+.main .content>i{
+    position: absolute;
+    width: 22px;
+    height:22px;
+    border: 3px solid #107aff;
+}
+.main .content>.i1{top: 0;left: 0;border-bottom: 0;border-right: 0}
+.main .content>.i2{top: 0;right: 0;border-bottom: 0;border-left: 0}
+.main .content>.i3{bottom: 0;left: 0;border-top: 0;border-right: 0}
+.main .content>.i4{bottom: 0;right: 0;border-top: 0;border-left: 0}
+.left_1>div{
+    height: 50%;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+}
+.left_1 .gdp{
+    height: 50%;
+}
+.left_1 .gdp_avg{
+    height: 50%;
+    padding-top: 0;
+}
+.left_1 .gdp > img,
+.left_1 .gdp_avg > img{
+    margin-top: 10px;
+    width: 70%;
+    height: 60%;
+}
+.left_1 .num{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    padding: 0 25px 0 45px;
+}
+.left_1 .num>i{
+    float: left;
+    width: 40px;
+    height: 55px;
+    background-color: rgba(57,57,255,0.1);;
+    margin-left: 8px;
+    font-style: normal;
+    text-align: center;
+    line-height: 55px;
+    font-size: 37px;
+    font-weight: bold;
+    color: #00FFFF;
+}
+.left_1 .num>i:last-child{
+    border: 0;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 15px;
+    text-align: left;
+}
+.title_Flag{
+    width:95%;
+    height: 23px;
+    line-height: 23px;
+    margin: 10px auto 0;
+    // border-left: 5px solid #00ffff;
+    padding-left: 15px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.content .charts{
+    width: 100%;
+    height: 90%;
+}
+.title_Flag .tab{
+    float: right;
+    overflow: hidden;
+}
+.title_Flag .tab>i{
+     float: left;
+     margin-right: 20px;
+     color: #EAEFFF;
+     font-size: 13px;
+     padding-bottom: 3px;
+    font-style: normal;
+    cursor: pointer;
+}
+.title_Flag .tab>i.active{
+    color: #7FAFF6;
+    border-bottom: 2px solid #7FAFF6;
+}
+.twoValue{
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+}
+.twoValue > span {
+  color: #EAEFFF;
+}
+.twoValue>b{
+    color: #7FAFF6;
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: normal;
+}

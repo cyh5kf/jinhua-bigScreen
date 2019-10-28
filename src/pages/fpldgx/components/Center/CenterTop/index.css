@@ -1,0 +1,92 @@
+.centerTop {
+  width: 100%;
+}
+.centerTop div.title {
+  height: 145px;
+  color: #fff;
+  font-size: 18px;
+  font-family: PingFangSC-Regular, PingFangSC;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 25px;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 36px;
+}
+.centerTop div.title b.bagLabel {
+  font-size: 98px;
+  font-family: 'LESLIE';
+  color: #18f0ff;
+  line-height: 60px;
+  font-weight: 400;
+}
+.centerTop .dz {
+  height: 515px;
+  width: 100%;
+  border: 1px solid transparent;
+  background: url(../../../../../assets/images/劳动关系切图/dizuo.jpg) no-repeat bottom right;
+  background-size: 95% 100%;
+}
+.centerTop .dz > div {
+  width: 68%;
+  height: 400px;
+  position: relative;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+.centerTop :global .map_jinhua_line_hint_box {
+  font-size: 14px;
+  background: #11487E;
+  color: #7FAFF6;
+  padding: 15px 20px;
+  position: relative;
+  border-radius: 2px;
+}
+.centerTop :global .map_jinhua_line_hint_box ul {
+  margin-bottom: 0;
+}
+.centerTop :global .map_jinhua_line_hint_box li {
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFangSC;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.centerTop :global .map_jinhua_line_hint_box li b {
+  color: #1ED0E7;
+  margin-left: 5px;
+}
+.centerTop :global .map_jinhua_line_hint_box .one_i,
+.centerTop :global .map_jinhua_line_hint_box .two_i,
+.centerTop :global .map_jinhua_line_hint_box .three_i,
+.centerTop :global .map_jinhua_line_hint_box .four_i {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  border-radius: 2px;
+}
+.centerTop :global .map_jinhua_line_hint_box .one_i {
+  top: 0px;
+  left: 0px;
+  border-top: 2px solid #3271B9;
+  border-left: 2px solid #3271B9;
+}
+.centerTop :global .map_jinhua_line_hint_box .two_i {
+  right: 0px;
+  top: 0px;
+  border-top: 2px solid #3271B9;
+  border-right: 2px solid #3271B9;
+}
+.centerTop :global .map_jinhua_line_hint_box .three_i {
+  bottom: 0px;
+  left: 0px;
+  border-bottom: 2px solid #3271B9;
+  border-left: 2px solid #3271B9;
+}
+.centerTop :global .map_jinhua_line_hint_box .four_i {
+  bottom: 0px;
+  right: 0px;
+  border-bottom: 2px solid #3271B9;
+  border-right: 2px solid #3271B9;
+}

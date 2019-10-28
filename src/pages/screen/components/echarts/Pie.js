@@ -15,7 +15,7 @@ class Pie extends React.Component {
                     color: '#7FAFF6',
                     fontFamily: 'PingFangSC-Regular,PingFangSC',
                     fontSize: 14,
-                    fontWight: 'normal',
+                    fontWeight: 'normal',
                 },
                 padding: [5, 5, 11, 0]
             },
@@ -33,7 +33,7 @@ class Pie extends React.Component {
                     color: 'rgba(255,255,255,1)',
                     fontFamily: 'PingFangSC-Regular,PingFangSC',
                     fontSize: 14,
-                    fontWight: 400,
+                    fontWeight: 400,
                 },
                 formatter: {}
             },
@@ -50,7 +50,7 @@ class Pie extends React.Component {
                     color: 'rgba(255,255,255,1)',
                     fontFamily: 'PingFangSC-Regular,PingFangSC',
                     fontSize: 18,
-                    fontWight: 500,
+                    fontWeight: 500,
                     emphasis: {
                         show: true,
                         textStyle: {
@@ -94,7 +94,7 @@ class Pie extends React.Component {
                         color: 'rgba(255, 255, 255, 0.04)',
                         fontFamily: 'PingFangSC-Regular,PingFangSC',
                         fontSize: 14,
-                        fontWight: 400,
+                        fontWeight: 400,
                     },
                 }
                 ]

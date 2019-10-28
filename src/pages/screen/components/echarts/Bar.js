@@ -1,6 +1,7 @@
 import React from 'react'
 import echarts from 'echarts'
 import ReactEcharts from 'echarts-for-react'
+import titleFont from './constant'
 
 class Bar extends React.Component {
 
@@ -9,13 +10,17 @@ class Bar extends React.Component {
         let option = {};
         if (datas) {
             option = {
+                textStyle: {
+                    fontSize: 14
+                },
                 title: {
                     text: '重点行业人才贡献率--新能源汽车',
                     textStyle: {
                         color: '#7FAFF6',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
-                        fontSize: 14,
-                        fontWight: 'normal',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        // fontSize: 16,
+                        fontSize: titleFont,
+                        fontWeight: 'normal',
                     },
                     padding: [5, 5, 11, 0]
                 },
@@ -33,15 +38,15 @@ class Bar extends React.Component {
                     axisLabel: {
                         align: 'center',
                         interval: 0,
-                        color: 'rgba(234,239,255,0.5)'
+                        color: 'rgba(234,239,255,0.5)',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        fontSize: 14,
                     },
                     axisTick: {
                         alignWithLabel: true,
                         lineStyle: {
                             color: 'rgba(255,251,234,0.1)',
-                            fontFamily: 'HelveticaNeue',
-                            fontSize: 12,
-                            fontWight: 400,
+                            fontWeight: 400,
                         }
                     },
                     axisLine: {
@@ -55,9 +60,9 @@ class Bar extends React.Component {
                     // name: '预警指数',
                     nameTextStyle: {
                         color: 'rgba(234,239,255,0.5)',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
-                        fontSize: 12,
-                        fontWight: 400
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        fontSize: 14,
+                        fontWeight: 400
                     },
                     axisLine: {
                         show: false
@@ -68,8 +73,8 @@ class Bar extends React.Component {
                     axisLabel: {
                         interval: 0,
                         color: 'rgba(234,239,255,0.5)',
-                        fontFamily: 'HelveticaNeue',
-                        fontSize: 12,
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        fontSize: 14,
                         formatter: `{value} ${datas.unit}`
                     },
                     boundaryGap: true,
@@ -86,9 +91,9 @@ class Bar extends React.Component {
                     padding: 8,
                     textStyle: {
                         color: 'rgba(255,255,255,1)',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
                         fontSize: 14,
-                        fontWight: 400,
+                        fontWeight: 400,
                     },
                     formatter: `{b}:{c}${datas.unit}`
                 },
@@ -115,9 +120,9 @@ class Bar extends React.Component {
                 }]
             };
         }
-        
+
         return (
-            <ReactEcharts option={option} style={{ width: '100%', height: 150 }}></ReactEcharts>
+            <ReactEcharts option={option} style={{ width: '100%', height: 180 }}></ReactEcharts>
         )
     }
 }

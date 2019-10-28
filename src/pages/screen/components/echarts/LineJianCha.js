@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactEcharts from 'echarts-for-react'
+import titleFont from './constant'
 
 class LineJianCha extends React.Component {
 
@@ -8,13 +9,17 @@ class LineJianCha extends React.Component {
         let option = {};
         if (datas) {
             option = {
+                textStyle: {
+                    fontSize: 14
+                },
                 title: {
                     text: datas.title,
                     textStyle: {
                         color: '#7FAFF6',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
-                        fontSize: 14,
-                        fontWight: 'normal',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        // fontSize: 16,
+                        fontSize: titleFont,
+                        fontWeight: 'normal',
                     },
                     padding: [5, 5, 11, 0]
                 },
@@ -32,15 +37,15 @@ class LineJianCha extends React.Component {
                     axisLabel: {
                         align: 'center',
                         interval: 0,
-                        color: 'rgba(234,239,255,0.5)'
+                        color: 'rgba(234,239,255,0.5)',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        fontSize: 14,
                     },
                     axisTick: {
                         alignWithLabel: true,
                         lineStyle: {
                             color: 'rgba(255,251,234,0.1)',
-                            fontFamily: 'HelveticaNeue',
-                            fontSize: 12,
-                            fontWight: 400,
+                            fontWeight: 400,
                         }
                     },
                     axisLine: {
@@ -58,7 +63,8 @@ class LineJianCha extends React.Component {
                         show: false
                     },
                     axisLabel: {
-                        show: false
+                        show: false,
+                        fontSize: 14
                     },
                     boundaryGap: true,
                     splitLine: {
@@ -71,9 +77,9 @@ class LineJianCha extends React.Component {
                     padding: 8,
                     textStyle: {
                         color: 'rgba(255,255,255,1)',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
                         fontSize: 14,
-                        fontWight: 400,
+                        fontWeight: 400,
                     },
                     formatter: {}
                 },
@@ -90,7 +96,7 @@ class LineJianCha extends React.Component {
                 }]
             };
         }
-        
+
         return (
             <ReactEcharts option={option} style={{ width: '48%', height: 120 }}></ReactEcharts>
         )

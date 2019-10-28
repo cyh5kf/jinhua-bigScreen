@@ -1,0 +1,209 @@
+/*全局css样式*/
+:global {
+  /*隐藏文本*/
+  /*路由切换动画——改变透明度*/
+  /*路由切换动画——左移动*/
+  /*路由切换动画——右移动*/
+  /*初始化*/
+}
+:global .ant-modal {
+  top: 360px !important;
+  margin-left: 510px !important;
+}
+:global * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:global a {
+  text-decoration: none;
+}
+:global body {
+  overflow: hidden;
+  background-color: #08111d;
+}
+:global .textOverflow_hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+:global .normal-enter {
+  opacity: 0;
+  z-index: 10000;
+}
+:global .normal-enter.normal-enter-active {
+  opacity: 1;
+  transition: all 0.4s ease-in;
+}
+:global .normal-leave {
+  opacity: 1;
+}
+:global .normal-leave.normal-leave-active {
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+:global .left-enter {
+  position: absolute;
+  top: 0;
+  background: #fff;
+  z-index: 10000;
+  opacity: 1;
+  transform: translateX(100%);
+}
+:global .left-enter.left-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.4s ease-out;
+}
+:global .left-leave {
+  opacity: 1;
+  transform: translateX(0);
+}
+:global .left-leave.left-leave-active {
+  opacity: 1;
+  transform: translateX(-100%);
+  transition: all 0.4s ease-out;
+}
+:global .right-enter {
+  transform: translateX(-100%);
+}
+:global .right-enter.right-enter-active {
+  transform: translateX(0);
+  transition: all 0.4s ease-out;
+}
+:global .right-leave {
+  position: absolute;
+  top: 0;
+  background: #fff;
+  z-index: 10000;
+  opacity: 1;
+  transform: translateX(0);
+}
+:global .right-leave.right-leave-active {
+  opacity: 1;
+  transform: translateX(100%);
+  transition: all 0.4s ease-out;
+}
+:global li {
+  list-style: none;
+}
+:global .ant-menu-item a {
+  color: #373737;
+}
+:global .ant-form label {
+  font-size: 14px;
+}
+:global .float-left {
+  float: left;
+}
+:global .float-right {
+  float: right;
+}
+:global .float-clear:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  content: "";
+}
+:global .width-display {
+  width: 100%;
+  display: inline-block;
+}
+:global .table-list .ant-pagination {
+  margin-top: 20px;
+}
+:global .margin-bottom-15 {
+  margin-bottom: 15px;
+}
+:global .margin-top-15 {
+  margin-top: 15px;
+}
+:global .overflow-hidden {
+  overflow: hidden;
+}
+:global .ant-table-body {
+  overflow: auto !important;
+}
+:global .border-bottom {
+  border-bottom: 1px solid #e8e8e8;
+}
+:global .span-input-height {
+  height: 30px;
+  display: block;
+}
+:global .input-red {
+  border: 1px solid red !important;
+}
+:global .page-header {
+  background: #fff;
+  z-index: 0;
+  padding: 15px 24px 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+:global .page-header h1 {
+  font-size: 20px;
+  margin-bottom: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+}
+:global .warpper {
+  background: none;
+}
+:global .wrapper-margin {
+  margin: 16px !important;
+}
+:global a {
+  color: #4873d3;
+}
+:global .ant-menu-item .anticon,
+:global .ant-menu-submenu-title .anticon {
+  font-size: 16px !important;
+}
+:global .ant-card-head {
+  font-size: 14px !important;
+}
+:global .margin-bottom-16 {
+  margin-bottom: 16px !important;
+}
+:global .h-relative {
+  position: relative;
+}
+:global .select-row {
+  background-color: #ffffff;
+  margin: 0 !important;
+  margin-bottom: 16px !important;
+  padding: 0.0667rem;
+}
+:global .select-year {
+  position: absolute !important;
+  top: 10px;
+  right: 20px;
+}
+:global .select-right {
+  float: right;
+}
+:global .layout-pane .ant-card {
+  width: 100%;
+  border-width: 0;
+  background: rgba(0, 40, 79, 0.26);
+  margin: 7px;
+}
+:global .layout-pane .ant-card .ant-card-head {
+  border-width: 0;
+}
+:global .layout-pane .ant-card .ant-card-head-title {
+  font-size: 0.25rem;
+  text-align: left;
+  color: #fff;
+}
+:global .layout-pane .ant-card .ant-card-body {
+  padding: 10px;
+  color: #fff;
+}
+:global .layout-pane .ant-card .ant-card-body .ant-card-grid-hoverable {
+  box-shadow: none;
+}
+@font-face {
+  font-family: 'LESLIE';
+  src: url('assets/fonts/LESLIE.TTF');
+}

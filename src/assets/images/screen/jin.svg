@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="48px" viewBox="0 0 51 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>分组 29</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.5730461%" y1="9.7129701%" x2="42.8383174%" y2="109.198913%" id="linearGradient-1">
+            <stop stop-color="#FDD30A" offset="0%"></stop>
+            <stop stop-color="#FBC55A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="11.9800137%" y1="27.1822613%" x2="126.681026%" y2="27.1822613%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFF3CE" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-3" points="26.4980395 8.46454407 25.9556848 37.3822773 36.1275598 9.01136991"></polygon>
+        <linearGradient x1="67.9351509%" y1="79.6173408%" x2="24.4126634%" y2="13.6754687%" id="linearGradient-4">
+            <stop stop-color="#FFCA00" offset="0%"></stop>
+            <stop stop-color="#FCB31A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="25.6203122%" y1="16.080121%" x2="100%" y2="16.080121%" id="linearGradient-5">
+            <stop stop-color="#FBB20E" offset="0%"></stop>
+            <stop stop-color="#FFF4CA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.0897381757%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#DB9400" offset="0.0897381757%"></stop>
+            <stop stop-color="#FEBC0B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="42.8052242%" y1="54.460068%" x2="108.173234%" y2="78.0288726%" id="linearGradient-7">
+            <stop stop-color="#FCC000" offset="0%"></stop>
+            <stop stop-color="#FEE800" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#FBB128" offset="0%"></stop>
+            <stop stop-color="#FFDD44" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="34.7838696%" x2="0%" y2="34.7838696%" id="linearGradient-9">
+            <stop stop-color="#FFFFFF" stop-opacity="0.259260271" offset="0%"></stop>
+            <stop stop-color="#39A9FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-10" points="25.9729208 1.03028697e-13 23.1561413 8.85718059 25.9729208 38.2673631 26.6550083 8.85718059"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="劳动关系最新-copy-2" transform="translate(-784.000000, -595.000000)">
+            <g id="分组-29" transform="translate(785.000000, 595.000000)">
+                <path d="M24.6212121,46.6404289 C38.2191313,46.6404289 49.2424242,42.9094682 49.2424242,38.3070956 C49.2424242,33.7047227 38.2191313,29.9737623 24.6212121,29.9737623 C11.0232922,29.9737623 3.53495011e-12,33.7047227 3.53495011e-12,38.3070956 C3.53495011e-12,42.9094682 11.0232922,46.6404289 24.6212121,46.6404289 Z" id="椭圆形" stroke="#CAB02D" opacity="0.403041303"></path>
+                <path d="M25,45.1252774 C37.5519254,45.1252774 47.7272727,42.0726732 47.7272727,38.3070956 C47.7272727,34.5415178 37.5519254,31.4889138 25,31.4889138 C12.4480739,31.4889138 2.27272727,34.5415178 2.27272727,38.3070956 C2.27272727,42.0726732 12.4480739,45.1252774 25,45.1252774 Z" id="椭圆形" stroke="#CAB02D" opacity="0.596563458"></path>
+                <path d="M25,43.6101259 C36.7151304,43.6101259 46.2121212,41.2358782 46.2121212,38.3070956 C46.2121212,35.3783128 36.7151304,33.0040653 25,33.0040653 C13.284869,33.0040653 3.78787879,35.3783128 3.78787879,38.3070956 C3.78787879,41.2358782 13.284869,43.6101259 25,43.6101259 Z" id="椭圆形" stroke="#CAB02D" opacity="0.796061218"></path>
+                <path d="M24.6212121,42.0949744 C34.8719512,42.0949744 43.1818182,40.3990832 43.1818182,38.3070956 C43.1818182,36.2151079 34.8719512,34.5192168 24.6212121,34.5192168 C14.3704725,34.5192168 6.06060606,36.2151079 6.06060606,38.3070956 C6.06060606,40.3990832 14.3704725,42.0949744 24.6212121,42.0949744 Z" id="椭圆形" fill="#FCC200" opacity="0.800000012"></path>
+                <path d="M25.3787879,39.8222471 C29.7719618,39.8222471 33.3333333,39.1438906 33.3333333,38.3070956 C33.3333333,37.4703005 29.7719618,36.7919441 25.3787879,36.7919441 C20.9856138,36.7919441 17.4242424,37.4703005 17.4242424,38.3070956 C17.4242424,39.1438906 20.9856138,39.8222471 25.3787879,39.8222471 Z" id="椭圆形" fill="#FCC200"></path>
+                <g id="路径-48">
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
+                    <use fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                </g>
+                <polygon id="路径-49" fill="url(#linearGradient-4)" points="25.9556848 4.24549285e-13 26.4669822 8.79266907 27.4532527 8.79266907 34.343093 14.0455577 31.0252339 8.9992281 36.1275598 8.9992281"></polygon>
+                <polygon id="路径-47" fill="url(#linearGradient-5)" points="30.8775598 9.01136991 34.343093 14.0455577 36.1275598 9.01136991"></polygon>
+                <polygon id="路径-43" fill="url(#linearGradient-6)" points="25.9556848 1.7408297e-13 15.2811413 8.79266907 25.9556848 38.2673631 23.4617557 8.79266907"></polygon>
+                <polygon id="路径-46" fill="url(#linearGradient-7)" points="25.9556848 7.46069873e-13 15.2811413 8.79266907 22.4998913 8.79266907"></polygon>
+                <polygon id="路径-44" fill="#FFF0A3" points="25.9978501 9.76996262e-14 22.4998913 8.61511076 25.0385062 27.6629585 24.2488707 8.61511076"></polygon>
+                <g id="路径-45">
+                    <use fill="url(#linearGradient-8)" xlink:href="#path-10"></use>
+                    <use fill="url(#linearGradient-9)" xlink:href="#path-10"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

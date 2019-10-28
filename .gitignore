@@ -11,8 +11,8 @@
 # production
 /build
 /dist
-dist.rar
-dist.zip
+**.rar
+**.zip
 
 # misc
 .DS_Store

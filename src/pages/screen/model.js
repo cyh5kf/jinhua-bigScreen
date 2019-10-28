@@ -11,18 +11,22 @@ const {
   GGFW,
   PYC_FWMYD, PYC_SXBL,
   WLXX, WLXX_YZCD,
-  MAP_ZS, MAP_RCLD, MAP_SZRS, MAP_FJLXZB
+  MAP_ZS, MAP_RCLD, MAP_SZRS, MAP_FJLXZB,
+  ZHZS_GDQ,
+  ZHZS_QX
 } = api
 
 export default modelExtend(pageModel, {
   namespace: "screen",
-  
+
   state: {
-    wheelStatus: 0
+    blockSelect: '', // 左右两边区域选中状态
+    zbSelect: '', // 中间按钮区域选中状态
+    isHover: false, // 中间区域鼠标hover状态
   },
-  
+
   subscriptions: {
-    setup({ dispatch, history }) {
+    setup ({ dispatch, history }) {
       history.listen(location => {
         if (pathMatchRegexp('/screen', location.pathname)) {
           dispatch({
@@ -65,7 +69,7 @@ export default modelExtend(pageModel, {
             type: 'SHBZ', // 社会保障指数
           });
           dispatch({
-            type: 'SHBZ_YXQYS', //社会保障指数--社会保险费减增绩效(有效企业数)
+            type: 'SHBZ_YXQYS', //社会保障指数--社会保险费减征绩效(有效企业数)
           });
           dispatch({
             type: 'SHBZ_GDPZB', // 社会保障指数-GDP占比
@@ -103,25 +107,37 @@ export default modelExtend(pageModel, {
             type: 'MAP_RCLD', // --地图展示-人才流动
           });
 
-          setInterval(()=> {
+          setInterval(() => {
             dispatch({
               type: 'MAP_RCLD', // --地图展示-人才流动
             });
-          }, 1000*60)
-          
+          }, 1000 * 60)
+
           dispatch({
             type: 'MAP_SZRS', // --地图展示-数字人社
           });
           dispatch({
             type: 'MAP_FJLXZB', // --地图展示-附加轮询指标
           });
+
+          dispatch({
+            type: 'MAP_FJLXZB', // --地图展示-附加轮询指标
+          });
+
+          dispatch({
+            type: 'ZHZS_GDQ', // 综合指数-各地区
+          });
+
+          dispatch({
+            type: 'ZHZS_QX', // 综合指数-全市
+          });
         }
       })
     },
   },
-  
+
   effects: {
-    *jycy({ payload = {} }, { call, put }) {
+    *jycy ({ payload = {} }, { call, put }) {
       const data = yield call(jycy, payload)
       yield put({
         type: 'updateState',
@@ -130,7 +146,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *JYCY_ZMMY({ payload = {} }, { call, put }) {
+    *JYCY_ZMMY ({ payload = {} }, { call, put }) {
       const data = yield call(JYCY_ZMMY, payload)
       yield put({
         type: 'updateState',
@@ -139,7 +155,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *JYCY_JQZS({ payload = {} }, { call, put }) {
+    *JYCY_JQZS ({ payload = {} }, { call, put }) {
       const data = yield call(JYCY_JQZS, payload)
       yield put({
         type: 'updateState',
@@ -148,7 +164,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *RCZS({ payload = {} }, { call, put }) {
+    *RCZS ({ payload = {} }, { call, put }) {
       const data = yield call(RCZS, payload)
       yield put({
         type: 'updateState',
@@ -157,7 +173,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *RCZS_RCZL({ payload = {} }, { call, put }) {
+    *RCZS_RCZL ({ payload = {} }, { call, put }) {
       const data = yield call(RCZS_RCZL, payload)
       yield put({
         type: 'updateState',
@@ -166,7 +182,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *RCZS_RCPPD({ payload = {} }, { call, put }) {
+    *RCZS_RCPPD ({ payload = {} }, { call, put }) {
       const data = yield call(RCZS_RCPPD, payload)
       yield put({
         type: 'updateState',
@@ -175,7 +191,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *RCZS_GCT({ payload = {} }, { call, put }) {
+    *RCZS_GCT ({ payload = {} }, { call, put }) {
       const data = yield call(RCZS_GCT, payload)
       yield put({
         type: 'updateState',
@@ -184,7 +200,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *LDGX({ payload = {} }, { call, put }) {
+    *LDGX ({ payload = {} }, { call, put }) {
       const data = yield call(LDGX, payload)
       yield put({
         type: 'updateState',
@@ -193,7 +209,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *LDGX_RCYJ({ payload = {} }, { call, put }) {
+    *LDGX_RCYJ ({ payload = {} }, { call, put }) {
       const data = yield call(LDGX_RCYJ, payload)
       yield put({
         type: 'updateState',
@@ -202,7 +218,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *LDGX_YJHJ({ payload = {} }, { call, put }) {
+    *LDGX_YJHJ ({ payload = {} }, { call, put }) {
       const data = yield call(LDGX_YJHJ, payload)
       yield put({
         type: 'updateState',
@@ -211,7 +227,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *LDGX_LDJC({ payload = {} }, { call, put }) {
+    *LDGX_LDJC ({ payload = {} }, { call, put }) {
       const data = yield call(LDGX_LDJC, payload)
       yield put({
         type: 'updateState',
@@ -220,7 +236,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *LDGX_RSZY({ payload = {} }, { call, put }) {
+    *LDGX_RSZY ({ payload = {} }, { call, put }) {
       const data = yield call(LDGX_RSZY, payload)
       yield put({
         type: 'updateState',
@@ -229,7 +245,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *SHBZ({ payload = {} }, { call, put }) {
+    *SHBZ ({ payload = {} }, { call, put }) {
       const data = yield call(SHBZ, payload)
       yield put({
         type: 'updateState',
@@ -238,7 +254,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *SHBZ_YXQYS({ payload = {} }, { call, put }) {
+    *SHBZ_YXQYS ({ payload = {} }, { call, put }) {
       const data = yield call(SHBZ_YXQYS, payload)
       yield put({
         type: 'updateState',
@@ -247,7 +263,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *SHBZ_GDPZB({ payload = {} }, { call, put }) {
+    *SHBZ_GDPZB ({ payload = {} }, { call, put }) {
       const data = yield call(SHBZ_GDPZB, payload)
       yield put({
         type: 'updateState',
@@ -256,7 +272,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *SHBZ_LFNL({ payload = {} }, { call, put }) {
+    *SHBZ_LFNL ({ payload = {} }, { call, put }) {
       const data = yield call(SHBZ_LFNL, payload)
       yield put({
         type: 'updateState',
@@ -265,7 +281,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *SHBZ_RJFL({ payload = {} }, { call, put }) {
+    *SHBZ_RJFL ({ payload = {} }, { call, put }) {
       const data = yield call(SHBZ_RJFL, payload)
       yield put({
         type: 'updateState',
@@ -274,7 +290,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *SHBZ_CKHY({ payload = {} }, { call, put }) {
+    *SHBZ_CKHY ({ payload = {} }, { call, put }) {
       const data = yield call(SHBZ_CKHY, payload)
       yield put({
         type: 'updateState',
@@ -283,7 +299,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *GGFW({ payload = {} }, { call, put }) {
+    *GGFW ({ payload = {} }, { call, put }) {
       const data = yield call(GGFW, payload)
       yield put({
         type: 'updateState',
@@ -292,7 +308,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *PYC_FWMYD({ payload = {} }, { call, put }) {
+    *PYC_FWMYD ({ payload = {} }, { call, put }) {
       const data = yield call(PYC_FWMYD, payload)
       yield put({
         type: 'updateState',
@@ -301,7 +317,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *PYC_SXBL({ payload = {} }, { call, put }) {
+    *PYC_SXBL ({ payload = {} }, { call, put }) {
       const data = yield call(PYC_SXBL, payload)
       yield put({
         type: 'updateState',
@@ -310,7 +326,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *WLXX({ payload = {} }, { call, put }) {
+    *WLXX ({ payload = {} }, { call, put }) {
       const data = yield call(WLXX, payload)
       yield put({
         type: 'updateState',
@@ -319,7 +335,7 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    *WLXX_YZCD({ payload = {} }, { call, put }) {
+    *WLXX_YZCD ({ payload = {} }, { call, put }) {
       const data = yield call(WLXX_YZCD, payload)
       yield put({
         type: 'updateState',
@@ -328,8 +344,8 @@ export default modelExtend(pageModel, {
         },
       })
     },
-    
-    *MAP_ZS({ payload = {} }, { call, put }) {
+
+    *MAP_ZS ({ payload = {} }, { call, put }) {
       const data = yield call(MAP_ZS, payload)
       yield put({
         type: 'updateState',
@@ -339,7 +355,7 @@ export default modelExtend(pageModel, {
       })
     },
 
-    *MAP_RCLD({ payload = {} }, { call, put }) {
+    *MAP_RCLD ({ payload = {} }, { call, put }) {
       const data = yield call(MAP_RCLD, payload)
       yield put({
         type: 'updateState',
@@ -349,7 +365,7 @@ export default modelExtend(pageModel, {
       })
     },
 
-    *MAP_SZRS({ payload = {} }, { call, put }) {
+    *MAP_SZRS ({ payload = {} }, { call, put }) {
       const data = yield call(MAP_SZRS, payload)
       yield put({
         type: 'updateState',
@@ -359,7 +375,7 @@ export default modelExtend(pageModel, {
       })
     },
 
-    *MAP_FJLXZB({ payload = {} }, { call, put }) {
+    *MAP_FJLXZB ({ payload = {} }, { call, put }) {
       const data = yield call(MAP_FJLXZB, payload)
       yield put({
         type: 'updateState',
@@ -369,12 +385,32 @@ export default modelExtend(pageModel, {
       })
     },
 
+    *ZHZS_GDQ ({ payload = {} }, { call, put }) {
+      const data = yield call(ZHZS_GDQ, payload)
+      yield put({
+        type: 'updateState',
+        payload: {
+          ZHZS_GDQ: data.data,
+        },
+      })
+    },
+
+    *ZHZS_QX ({ payload = {} }, { call, put }) {
+      const data = yield call(ZHZS_QX, payload)
+      yield put({
+        type: 'updateState',
+        payload: {
+          ZHZS_QX: data.data,
+        },
+      })
+    },
+
 
   },
 
-  
+
   reducers: {
-  
+
   }
-  
+
 })

@@ -1,17 +1,15 @@
 import React, { PureComponent } from 'react'
-import HeaderMenu from 'components/HeaderMenu'
 import styles from './index.less'
-
+import Header from 'components/Header'
 
 class Zjygzw extends PureComponent {
 
-  render () {
-
+  render() {
 
     return (
-        <div className={styles.container}>
-            <HeaderMenu />
-            <iframe width="100%" height="100%" src="http://10.83.137.161:7020/zjygzw"></iframe>
+      <div className={styles.container}>
+            <Header />
+            <iframe title="最多跑一次改革" width="100%" height="100%" src="http://10.83.137.161:7020/zjygzw/sysmanager/login/mainPage"></iframe>
         </div>
     )
   }
@@ -19,4 +17,3 @@ class Zjygzw extends PureComponent {
 
 
 export default Zjygzw;
-

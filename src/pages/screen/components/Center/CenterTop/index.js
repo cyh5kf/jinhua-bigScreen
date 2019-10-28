@@ -8,29 +8,42 @@ class CenterTop extends PureComponent {
     constructor(props){
         super(props)
         this.timer = ''
+        this.ticker = this.ticker.bind(this);
     }
     
-    componentDidMount() {
-        this.timer = setInterval(() => {
-            const { dispatch, screen } = this.props
-            const { wheelStatus } = screen
-            let count = wheelStatus + 1
-            count = count > 5? 0: count
-            dispatch({
-                type: 'screen/updateState',
-                payload: {
-                    wheelStatus: count
-                }
-            })
-        }, 5000)
+    ticker = () => {
+        const { dispatch, screen } = this.props
+        const { wheelStatus } = screen
+
+        let count = wheelStatus + 1
+        count = count > 5 ? 0 : count
+        dispatch({
+            type: 'screen/updateState',
+            payload: {
+                wheelStatus: count
+            }
+        })
+
     }
+
+    onHover = (ind, ishover) => {
+        const { dispatch } = this.props
+        dispatch({
+            type: 'screen/updateState',
+            payload: {
+                wheelStatus: ind,
+                isHover: ishover
+            }
+        })
+    }
+
 
     componentWillUnmount() {
         clearInterval(this.timer)
     }
-    
+
     render() {
-        const { wheelStatus, MAP_SZRS } = this.props.screen
+        const { wheelStatus, MAP_SZRS, isHover } = this.props.screen
         let jycy_SZRS = ''
         let rc_SZRS = ''
         let ldgx_SZRS = ''
@@ -55,8 +68,16 @@ class CenterTop extends PureComponent {
             }
         }
 
+        if (isHover) {
+            clearInterval(this.timer)
+        } else {
+            clearInterval(this.timer)
+            this.timer = setInterval(this.ticker, 5000)
+        }
+        
+
         return (
-            <div className={styles.centerTop}>
+            <div className={styles.centerTop} style={{zIndex: 9999}}>
                 <div className={styles.icon_yun}></div>
                 <svg version="1.1" className="line line1">
                     <path fill="transparent" strokeWidth="1" d="M140 20 Q 95 10 10 30" className="path"></path>
@@ -94,7 +115,7 @@ class CenterTop extends PureComponent {
 
                 <div className="ball ball6"></div>
 
-                <div className={`${styles.block} ${styles.block1} ${wheelStatus === 0? styles.active: ''}`}>
+                <div onMouseOver={() => this.onHover(0, true)} onMouseOut={() => this.onHover(0, false)} className={`${styles.block} ${styles.block1} ${wheelStatus === 0? styles.active: ''}`}>
                     {
                         jycy_SZRS !== '' ? (
                             <p>就业创业指数{wheelStatus === 0? '(' + jycy_SZRS + ')': '' }</p>
@@ -104,7 +125,7 @@ class CenterTop extends PureComponent {
                     }
                     <div className={styles.icon_block}></div>
                 </div>
-                <div className={`${styles.block} ${styles.block2} ${wheelStatus === 1? styles.active: ''}`}>
+                <div onMouseOver={() => this.onHover(1, true)} onMouseOut={() => this.onHover(1, false)} className={`${styles.block} ${styles.block2} ${wheelStatus === 1? styles.active: ''}`}>
                     {
                         rc_SZRS !== '' ? (
                             <p>人才指数{wheelStatus === 1? '(' + rc_SZRS + ')': '' }</p>
@@ -114,7 +135,7 @@ class CenterTop extends PureComponent {
                     }
                     <div className={styles.icon_block}></div>
                 </div>
-                <div className={`${styles.block} ${styles.block3} ${wheelStatus === 2? styles.active: ''}`}>
+                <div onMouseOver={() => this.onHover(2, true)} onMouseOut={() => this.onHover(2, false)} className={`${styles.block} ${styles.block3} ${wheelStatus === 2? styles.active: ''}`}>
                     {
                         ldgx_SZRS !== '' ? (
                             <p>劳动关系指数{wheelStatus === 2? '(' + ldgx_SZRS + ')': '' }</p>
@@ -124,7 +145,7 @@ class CenterTop extends PureComponent {
                     }
                     <div className={styles.icon_block}></div>
                 </div>
-                <div className={`${styles.block} ${styles.block4} ${wheelStatus === 3? styles.active: ''}`}>
+                <div onMouseOver={() => this.onHover(3, true)} onMouseOut={() => this.onHover(3, false)} className={`${styles.block} ${styles.block4} ${wheelStatus === 3? styles.active: ''}`}>
                     {
                         wlxxaq_SZRS !== '' ? (
                             <p>网络信息安全指数{wheelStatus === 3? '(' + wlxxaq_SZRS + ')': '' }</p>
@@ -134,7 +155,7 @@ class CenterTop extends PureComponent {
                     }
                     <div className={styles.icon_block}></div>
                 </div>
-                <div className={`${styles.block} ${styles.block5} ${wheelStatus === 4? styles.active: ''}`}>
+                <div onMouseOver={() => this.onHover(4, true)} onMouseOut={() => this.onHover(4, false)} className={`${styles.block} ${styles.block5} ${wheelStatus === 4? styles.active: ''}`}>
                     {
                         ggfw_SZRS !== '' ? (
                             <p>公共服务指数{wheelStatus === 4? '(' + ggfw_SZRS + ')': '' }</p>
@@ -144,7 +165,7 @@ class CenterTop extends PureComponent {
                     }
                     <div className={styles.icon_block}></div>
                 </div>
-                <div className={`${styles.block} ${styles.block6} ${wheelStatus === 5? styles.active: ''}`}>
+                <div onMouseOver={() => this.onHover(5, true)} onMouseOut={() => this.onHover(5, false)} className={`${styles.block} ${styles.block6} ${wheelStatus === 5? styles.active: ''}`}>
                     {
                         shbz_SZRS !== '' ? (
                             <p>社会保障指数{wheelStatus === 5? '(' + shbz_SZRS + ')': '' }</p>

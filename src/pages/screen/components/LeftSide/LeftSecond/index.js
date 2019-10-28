@@ -1,56 +1,103 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'dva';
+import { withRouter } from 'dva/router';
 import styles from '../LeftSide.less'
 import IndexStyle from '../../../index.less'
-import Bar from '../../echarts/Bar'
 import classNames from 'classnames'
+import Line from '../../echarts/Line'
+
 
 @connect(({ screen, loading }) => ({ screen, loading }))
 class LeftSecond extends PureComponent {
 
+    onChangeBlock = (ind, flag) => {
+        const { dispatch } = this.props
+        dispatch({
+            type: 'screen/updateState',
+            payload: {
+                blockSelect: ind,
+                // zbSelect: flag? '': 0
+            }
+        })
+    }
+
+    onLinkTo = (url) => {
+        const { history } = this.props
+        history.push(url);
+    }
+
+    // 修改中间地图显示状态
+    onChangeZb = (count) => {
+        const { dispatch } = this.props
+
+        dispatch({
+            type: 'screen/updateState',
+            payload: {
+                zbSelect: count
+            }
+        })
+    }
+
     render() {
         const { screen } = this.props;
-        const { RCZS, RCZS_RCZL, RCZS_RCPPD, RCZS_GCT, wheelStatus } = screen;
-        const flex = classNames(styles.flex_item, styles.under_line);
-        
-        const rczs = RCZS && RCZS.length > 0 ? RCZS[0] : {};
-        const rcppd = RCZS_RCPPD && RCZS_RCPPD.length > 0 ? RCZS_RCPPD[0] : {};
-        let rczl = [];
-        if (RCZS_RCZL) {
-            rczl = RCZS_RCZL.map((data, index) =>
+        const { jycy, JYCY_ZMMY, JYCY_JQZS } = screen;
+        const container = classNames('float-clear', styles.flex_item);
+        const jycy_zs = jycy && jycy.length > 0 ? jycy[0] : {};
+        let zmmy;
+        if (JYCY_ZMMY) {
+            let xdata = JYCY_ZMMY.map((data) => 
+                data.MONTH_ID === 1 ? `${data.YEAR_ID}` : `${data.MONTH_ID}月`
+            );
+            let yVal = JYCY_ZMMY.map( da =>da.KPI_VALUE );
+            let ydata = JYCY_ZMMY.map((data) => {
+                return {
+                    val: data.KPI_VALUE,
+                    dec: data.补充说明
+                }
+            });
+            zmmy = {
+                title: JYCY_ZMMY[0].KPI_NAME,
+                xdata: xdata || [],
+                ydata: ydata || [],
+                yVal: yVal || []
+            }
+        };
+        let jqzs = [];
+        if (JYCY_JQZS) {
+            jqzs = JYCY_JQZS.map((data, index) => 
                 <div key={index}>
                     <p>{data.KPI_NAME}</p>
-                    <p><b>{data.KPI_VALUE}{data.KPI_UNIT}</b>/{data.KPI_TARGET}{data.KPI_TARGET_UNIT}</p>
+                    <p>
+                        <b className={styles.has_margin_right}>
+                            <span className={IndexStyle.numfont}>{data.KPI_VALUE}</span>
+                            <span style={{color: '#fff'}}>人</span>
+                        </b>
+                        <span>全省:<b className={styles.orange}>{data.全省}</b>/{data.省内城市数}</span>
+                    </p>
                 </div>
             );
         }
-        let gct;
-        if (RCZS_GCT) {
-            let xdata = RCZS_GCT.map((data) =>data.KPI_NAME);
-            let ydata = RCZS_GCT.map(data => data.KPI_VALUE);
-            gct = {
-                // title: RCZS_GCT[0].KPI_NAME,
-                xdata: xdata || [],
-                ydata: ydata || [],
-                unit: RCZS_GCT[0].KPI_UNIT
-            }
-        }
 
         return (
-            <div className={`${styles.leftContent} ${wheelStatus === 1 ? styles.is_active : ''}`}>
-                <div className={IndexStyle.text_title}>人才指数</div>
-                <div className={flex}>
+            <div className={styles.leftContent}>
+                <div className={IndexStyle.text_title} style={{display: 'flex', justifyContent: 'space-between'}} onClick={() => this.onChangeZb(1)}>
                     <div>
-                        <p>{rczs.KPI_NAME ? rczs.KPI_NAME : '----'}</p>
-                        <p><b>{rczs.KPI_VALUE ? rczs.KPI_VALUE : 0}</b>/{rczs.全省平均 ? rczs.全省平均 : 0}全省平均</p>
+                        <span>就业创业景气指数</span>
+                        <span className={IndexStyle.num}>{jycy_zs.KPI_VALUE? Math.round(jycy_zs.KPI_VALUE): 0}</span>
                     </div>
-                    {rczl}
+                    <div style={{fontSize: '12px'}}>
+                        {/* <span><b style={{fontSize: '0.1833rem'}}>{jycy_zs.KPI_VALUE ? jycy_zs.KPI_VALUE : 0}</b> / {jycy_zs.全省平均 ? jycy_zs.全省平均 : 0}</span> <span style={{color: '#75809B'}}>全省平均</span> */}
+                        <span><b style={{fontSize: '0.1833rem'}}>{jycy_zs.KPI_VALUE ? Math.round(jycy_zs.KPI_VALUE) : 0}</b> / --</span> <span style={{color: '#75809B'}}>全省平均</span>
+                    </div>
                 </div>
-                <div className={styles.fixed_right}>
-                    {rcppd.KPI_NAME ? rcppd.KPI_NAME.substring(0, 5) : '----'}: <b>{rcppd.KPI_VALUE ? rcppd.KPI_VALUE : 0}{rcppd.KPI_UNIT}</b>
+                <div className={IndexStyle.block_item} onClick={() => this.onLinkTo('/jycyTwo')}>
+                    <Line JYCY_ZMMY={zmmy} />
+                    <div style={{marginTop: '0.1rem'}} className={container}>
+                        {jqzs}
+                    </div> 
                 </div>
-                <Bar gct={gct} />
+                
             </div>
         )
     }
@@ -61,5 +108,5 @@ LeftSecond.propTypes = {
     loading: PropTypes.object,
 }
 
-export default LeftSecond;
+export default withRouter(LeftSecond);
 

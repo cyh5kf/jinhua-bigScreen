@@ -15,16 +15,7 @@ export default {
     isLogin: store.get('isLogin') || false, // 登录状态
     collapsed: store.get('collapsed') || false,
     updatePwdModalVisible: false, // 修改密码弹窗状态
-    notifications: [
-      {
-        title: 'New User is registered.',
-        date: new Date(Date.now() - 10000000),
-      },
-      {
-        title: 'Application has been approved.',
-        date: new Date(Date.now() - 50000000),
-      },
-    ],
+    // videoAutoplay: true, // 主屏自动播放状态
   },
 
   subscriptions: {
@@ -67,12 +58,6 @@ export default {
       return {
         ...state,
         collapsed: payload
-      }
-    },
-    allNotificationsRead(state) {
-      return {
-        ...state,
-        notifications: []
       }
     },
     checkIsLogin(state, { payload }) {

@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactEcharts from 'echarts-for-react'
+import titleFont from './constant'
 
 class Line extends React.Component{
 
@@ -8,13 +9,17 @@ class Line extends React.Component{
         let option ={};
         if (datas) {
             option = {
+                textStyle: {
+                    fontSize: 14
+                },
                 title: {
                     text: datas.title,
                     textStyle: {
                         color: '#7FAFF6',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
-                        fontSize: 14,
-                        fontWight: 'normal',
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        // fontSize: 16,
+                        fontSize: titleFont,
+                        fontWeight: 'normal',
                     },
                     padding: [5, 5, 11, 0]
                 },
@@ -32,15 +37,15 @@ class Line extends React.Component{
                     axisLabel: {
                         align: 'center',
                         interval: 0,
-                        color: 'rgba(234,239,255,0.5)'
+                        color: 'rgba(234,239,255,0.5)',
+                        fontSize: 14,
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei'
                     },
                     axisTick: {
                         alignWithLabel: true,
                         lineStyle: {
                             color: 'rgba(255,251,234,0.1)',
-                            fontFamily: 'HelveticaNeue',
-                            fontSize: 12,
-                            fontWight: 400,
+                            fontWeight: 400,
                         }
                     },
                     axisLine: {
@@ -54,9 +59,9 @@ class Line extends React.Component{
                     name: '预警指数',
                     nameTextStyle: {
                         color: 'rgba(234,239,255,0.5)',
-                        fontFamily: 'PingFangSC-Regular,PingFangSC',
-                        fontSize: 12,
-                        fontWight: 400,
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        // fontSize: 12,
+                        fontWeight: 400,
                     },
                     axisLine: {
                         show: false
@@ -67,8 +72,8 @@ class Line extends React.Component{
                     axisLabel: {
                         interval: 0,
                         color: 'rgba(234,239,255,0.5)',
-                        fontFamily: 'HelveticaNeue',
-                        fontSize: 12,
+                        fontFamily: 'Times New Roman,PingFangSC-Regular,PingFangSC,Microsoft YaHei',
+                        fontSize: 14,
                     },
                     boundaryGap: true,
                     splitLine: {
@@ -86,7 +91,7 @@ class Line extends React.Component{
                         color: 'rgba(255,255,255,1)',
                         fontFamily: 'PingFangSC-Regular,PingFangSC',
                         fontSize: 14,
-                        fontWight: 400,
+                        fontWeight: 400,
                     },
                     // hideDelay: 9999999999,
                     formatter: params => {
@@ -125,12 +130,12 @@ class Line extends React.Component{
                             colorStops: [
                                 { offset: 0, color: '#FFA102' }, // 0% 处的颜色
                                 { offset: 0.02, color: '#684720' }, // 2% 处的颜色
-                                { offset: 1, color: '#040C33' } // 100% 处的颜色
+                                { offset: 1, color: 'rgba(255, 255, 255, 0)' } // 100% 处的颜色
                             ],
                             global: false // 缺省为 false
                         }
                     }
-                }, 
+                },
                     /* {
                         // data: [null, null, null, null, null, 160, 188, 210, 320, 220, 200, 200],
                         data: datas.ydata,
@@ -143,7 +148,7 @@ class Line extends React.Component{
                 ]
             };
         }
-        
+
         return (
             <ReactEcharts option = { option } style = {{ width: '100%', height: 200 }}></ReactEcharts>
         )

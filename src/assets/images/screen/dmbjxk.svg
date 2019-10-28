@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="321px" height="110px" viewBox="0 0 321 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>矩形 copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1111.12093 109 1371.69785 109 1382 118.058991 1382 170.447273 1372.0895 179 1110.69632 179 1101 169.610538 1101 117.774194"></polygon>
+        <filter x="-10.7%" y="-42.9%" width="121.4%" height="185.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0274509804   0 0 0 0 0.564585904   0 0 0 0 0.921568627  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="主屏最新" transform="translate(-1081.000000, -89.000000)">
+            <g id="矩形-copy-3">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <path stroke="#00F0FF" stroke-width="1" d="M1111.30749,109.5 L1101.5,118.002462 L1101.5,169.398707 L1110.89873,178.5 L1371.90359,178.5 L1381.5,170.218324 L1381.5,118.285137 L1371.50929,109.5 L1111.30749,109.5 Z" stroke-linejoin="square" fill="#090D12" fill-rule="evenodd"></path>
+            </g>
+        </g>
+    </g>
+</svg>
